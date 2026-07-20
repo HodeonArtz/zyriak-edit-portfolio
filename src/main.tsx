@@ -1,6 +1,14 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { BrowserRouter, Route, Routes } from "react-router";
+import HomePage from "./_pages/HomePage";
 
 createRoot(document.getElementById("root")!).render(
-  <StrictMode>Hello world</StrictMode>,
+  <StrictMode>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<HomePage />} />
+      </Routes>
+    </BrowserRouter>
+  </StrictMode>,
 );
