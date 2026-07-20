@@ -1,0 +1,17 @@
+@import "./assets/fonts/Switzer/css/switzer.css";
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  body,
+  div#root {
+    margin: 0;
+    min-height: 100vh;
+  }
+}
+
+@layer typography {
+  html {
+    font-family: "Switzer-Variable";
+  }
+}
