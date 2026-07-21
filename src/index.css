@@ -1,4 +1,6 @@
 @import "./assets/fonts/Switzer/css/switzer.css";
+@import "./_styles/utils.css";
+
 @layer base {
   * {
     box-sizing: border-box;
@@ -9,7 +11,7 @@
     min-height: 100vh;
   }
   body {
-    background-image: url("../public/img/dorfic2.webp");
+    background-image: url("/img/dorfic2.webp");
     background-size: cover;
   }
 }
@@ -17,5 +19,17 @@
 @layer typography {
   html {
     font-family: "Switzer-Variable";
+    color: white;
+  }
+  p {
+    @mixin text-shadow;
+  }
+}
+
+@layer styling {
+  img {
+    @mixin img;
+
+    position: relative;
   }
 }

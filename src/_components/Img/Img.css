@@ -1,0 +1,46 @@
+@import url("../../_styles/utils.css");
+.glossy-image {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  /* border-image: linear-gradient(0deg, #ff4d4d, #4d9fff) 1; */
+  @mixin border-radius;
+  @mixin img-shadow;
+}
+.glossy-image__gloss {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 46%;
+  user-select: none;
+  -webkit-user-select: none;
+  pointer-events: none;
+  box-shadow: inset 0 -39px 31px -13px rgba(255, 255, 255, 0.42);
+}
+.glossy-image__img {
+  display: block;
+}
+.glossy-image::after {
+  @mixin border-radius;
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: inherit;
+  opacity: 29%;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.21),
+    rgba(255, 255, 255, 1)
+  );
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  pointer-events: none;
+}

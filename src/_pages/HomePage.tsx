@@ -1,13 +1,12 @@
+import GlossyContainer from "../_components/GlossyContainer/GlossyContainer";
+import ProfileSection from "../_components/ProfileSection/ProfileSection";
+
 const HomePage = () => {
   return (
     <>
-      <section className="glossy-container">
-        <img src="img/zyriak-profile-photo.jpg" alt="zyriak photo" />
-        <h1>Zyriak</h1>
-        <p>
-          <i>Just vibing...</i>
-        </p>
-      </section>
+      <GlossyContainer>
+        <ProfileSection />
+      </GlossyContainer>
       <section>
         <h2>My works</h2>
         <img src="" alt="edit-1" />

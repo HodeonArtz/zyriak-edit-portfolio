@@ -1,0 +1,35 @@
+@import url("../../_styles/utils.css");
+
+.glossy-container {
+  padding: 1.5em;
+  background: linear-gradient(
+    30deg,
+    rgba(255, 203, 157, 0.1) 0%,
+    rgba(255, 234, 208, 0.54) 100%
+  );
+
+  backdrop-filter: blur(1em);
+  @mixin border-radius;
+}
+.glossy-container::after {
+  @mixin border-radius;
+
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: inherit;
+  opacity: 29%;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.21),
+    rgba(255, 255, 255, 1)
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+  pointer-events: none;
+}
