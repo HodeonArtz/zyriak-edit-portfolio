@@ -1,4 +1,4 @@
-import Img from "../Img/Img";
+import Img from "../../../../_components/Img/Img";
 import "./ProfileSection.css";
 
 const ProfileSection = () => {

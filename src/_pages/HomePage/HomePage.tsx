@@ -1,5 +1,5 @@
-import GlossyContainer from "../_components/GlossyContainer/GlossyContainer";
-import ProfileSection from "../_components/ProfileSection/ProfileSection";
+import GlossyContainer from "../../_components/GlossyContainer/GlossyContainer";
+import ProfileSection from "./sections/ProfileSection/ProfileSection";
 
 const HomePage = () => {
   return (
