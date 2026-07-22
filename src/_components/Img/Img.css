@@ -1,8 +1,7 @@
 @import url("../../_styles/utils.css");
 .glossy-image {
   position: relative;
-  width: fit-content;
-  height: fit-content;
+
   /* border-image: linear-gradient(0deg, #ff4d4d, #4d9fff) 1; */
   @mixin border-radius;
   @mixin img-shadow;
@@ -20,6 +19,8 @@
   box-shadow: inset 0 -39px 31px -13px rgba(255, 255, 255, 0.42);
 }
 .glossy-image__img {
+  width: 100%;
+  height: 100%;
   display: block;
 }
 .glossy-image::after {

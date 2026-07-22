@@ -1,4 +1,16 @@
 .profile-section {
-  .profile__profile-section {
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "picture content content";
+  gap: 1.5em;
+}
+.profile__profile-picture {
+  grid-area: picture;
+}
+
+.profile__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  grid-area: content;
 }

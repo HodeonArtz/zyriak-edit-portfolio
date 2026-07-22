@@ -1,5 +1,6 @@
 import Img from "../Img/Img";
 import "./ProfileSection.css";
+
 const ProfileSection = () => {
   return (
     <div className="profile-section">
@@ -9,10 +10,12 @@ const ProfileSection = () => {
         className="profile__profile-picture"
         glossy
       />
-      <h1>Zyriak</h1>
-      <p>
-        <i>Just vibing...</i>
-      </p>
+      <article className="profile__content">
+        <h1>Zyriak</h1>
+        <p>
+          <i>Just vibing...</i>
+        </p>
+      </article>
     </div>
   );
 };
