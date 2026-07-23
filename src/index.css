@@ -1,5 +1,6 @@
 @import "./assets/fonts/Switzer/css/switzer.css";
 @import "./_styles/utils.css";
+@import "./_styles/breakpoints.css";
 
 @layer base {
   * {
