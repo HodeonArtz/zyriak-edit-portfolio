@@ -1,5 +1,6 @@
 import GlossyContainer from "../../_components/GlossyContainer/GlossyContainer";
 import ProfileSection from "./sections/ProfileSection/ProfileSection";
+import WorksSection from "./sections/WorksSection/WorksSection";
 
 const HomePage = () => {
   return (
@@ -8,24 +9,7 @@ const HomePage = () => {
         <ProfileSection />
       </GlossyContainer>
       <GlossyContainer>
-        <div>
-          <h2>My works</h2>
-          <img src="" alt="edit-1" />
-          <img src="" alt="edit-2" />
-          <img src="" alt="edit-3" />
-          <img src="" alt="edit-4" />
-          <img src="" alt="edit-5" />
-          <img src="" alt="edit-6" />
-          <img src="" alt="edit-7" />
-          <img src="" alt="edit-8" />
-          <img src="" alt="edit-9" />
-          <img src="" alt="edit-10" />
-          <img src="" alt="edit-11" />
-          <img src="" alt="edit-12" />
-          <div className="goto-socials-button-container">
-            <button>Go watch my other works!</button>
-          </div>
-        </div>
+        <WorksSection />
       </GlossyContainer>
       <GlossyContainer>
         <div>

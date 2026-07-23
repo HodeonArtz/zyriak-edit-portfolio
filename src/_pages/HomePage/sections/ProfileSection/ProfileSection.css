@@ -9,8 +9,8 @@
 }
 
 .profile__content {
+  grid-area: content;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  grid-area: content;
 }
