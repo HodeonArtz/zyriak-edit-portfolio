@@ -1,0 +1,27 @@
+.socials-section {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.5rem;
+}
+
+.socials__links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+}
+
+.socials__socials {
+  display: flex;
+  gap: 1.125rem;
+}
+
+.socials__socials > * {
+  flex: 1 1 0;
+}
+
+.socials__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

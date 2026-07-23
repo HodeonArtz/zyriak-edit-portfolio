@@ -1,5 +1,6 @@
 import GlossyContainer from "../../_components/GlossyContainer/GlossyContainer";
 import ProfileSection from "./sections/ProfileSection/ProfileSection";
+import SocialsSection from "./sections/SocialsSection/SocialsSection";
 import WorksSection from "./sections/WorksSection/WorksSection";
 
 const HomePage = () => {
@@ -12,12 +13,10 @@ const HomePage = () => {
         <WorksSection />
       </GlossyContainer>
       <GlossyContainer>
+        <SocialsSection />
+      </GlossyContainer>
+      <GlossyContainer>
         <div>
-          <h2>My socials</h2>
-          <button>YouTube</button>
-          <button>Instagram</button>
-          <button>TikTok</button>
-          <button>davidpetersen.0318@gmail.com</button>
           <div className="credits-section">
             <p>
               Website designed and built by: <img alt="hdn logo" />
