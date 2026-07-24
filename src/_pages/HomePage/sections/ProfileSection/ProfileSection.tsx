@@ -1,4 +1,5 @@
 import Img from "../../../../_components/Img/Img";
+import Title from "../../../../_components/Title/Title";
 import "./ProfileSection.css";
 
 const ProfileSection = () => {
@@ -11,7 +12,7 @@ const ProfileSection = () => {
         glossy
       />
       <article className="profile__content">
-        <h1>Zyriak</h1>
+        <Title as="h1">Zyriak</Title>
         <p>
           <i>Just vibing...</i>
         </p>

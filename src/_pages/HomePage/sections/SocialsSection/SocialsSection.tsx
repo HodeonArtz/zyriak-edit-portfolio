@@ -1,9 +1,10 @@
+import Title from "../../../../_components/Title/Title";
 import "./SocialsSection.css";
 
 const SocialsSection = () => {
   return (
     <div className="socials-section">
-      <h2>My socials</h2>
+      <Title as="h2">My socials</Title>
       <div className="socials__links">
         <div className="socials__socials">
           <button>YouTube</button>

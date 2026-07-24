@@ -1,10 +1,11 @@
 import Img from "../../../../_components/Img/Img";
+import Title from "../../../../_components/Title/Title";
 import "./WorksSection.css";
 
 const WorksSection = () => {
   return (
     <div className="works-section">
-      <h2>My works</h2>
+      <Title as="h2">My works</Title>
       <article className="works__edits">
         <Img glossy src="" alt="edit-1" />
         <Img glossy src="" alt="edit-2" />
