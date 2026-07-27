@@ -1,0 +1,21 @@
+.brand-logotype__wrapper {
+  width: fit-content;
+  position: relative;
+}
+
+.brand-logotype__decoration {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  filter: drop-shadow(0 4px 16px rgba(109, 86, 61, 0.36));
+}
+
+.brand-logotype__text {
+  width: fit-content;
+  padding: 20px 26px;
+  filter: drop-shadow(0 2.5px 1.5px rgb(0 0 0 / 0.15));
+  background: linear-gradient(187deg, #f6d13a, #de6b42);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

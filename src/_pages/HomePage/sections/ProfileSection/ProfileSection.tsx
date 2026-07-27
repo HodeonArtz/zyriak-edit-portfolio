@@ -1,5 +1,5 @@
 import Img from "../../../../_components/Img/Img";
-import Title from "../../../../_components/Title/Title";
+import BrandLogotype from "./_components/BrandLogotype";
 import "./ProfileSection.css";
 
 const ProfileSection = () => {
@@ -12,7 +12,7 @@ const ProfileSection = () => {
         glossy
       />
       <article className="profile__content">
-        <Title as="h1">Zyriak</Title>
+        <BrandLogotype />
         <p>
           <i>Just vibing...</i>
         </p>
