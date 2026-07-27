@@ -1,4 +1,12 @@
 @import url("../../assets/fonts/Otomo/css/otomo.css");
-.title {
-  font-family: "Otomo W00 Round";
+@layer typography {
+  .title {
+    font-family: "Otomo W00 Round";
+  }
+  h1.title {
+    font-size: 3em;
+  }
+  h2.title {
+    font-size: 2em;
+  }
 }
