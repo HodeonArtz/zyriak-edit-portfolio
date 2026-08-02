@@ -1,3 +1,4 @@
+import Button from "../../../../_components/Button/Button";
 import Img from "../../../../_components/Img/Img";
 import Title from "../../../../_components/Title/Title";
 import "./WorksSection.css";
@@ -22,7 +23,7 @@ const WorksSection = () => {
       </article>
 
       <div className="works__goto-socials-button-container">
-        <button>Go watch my other works!</button>
+        <Button>Go watch my other works!</Button>
       </div>
     </div>
   );
