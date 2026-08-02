@@ -13,7 +13,7 @@ const ProfileSection = () => {
       />
       <article className="profile__content">
         <BrandLogotype />
-        <p>
+        <p className="profile__description">
           <i>Just vibing...</i>
         </p>
       </article>

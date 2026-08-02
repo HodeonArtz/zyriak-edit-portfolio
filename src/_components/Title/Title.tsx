@@ -1,9 +1,8 @@
-import type { ReactNode } from "react";
 import "./Title.css";
 
 interface TitleProps extends React.HTMLAttributes<HTMLHeadingElement> {
   as?: "h1" | "h2";
-  children?: ReactNode | undefined;
+  children?: string | undefined;
 }
 
 const Title = ({
@@ -13,7 +12,7 @@ const Title = ({
   ...props
 }: TitleProps) => {
   return (
-    <Tag {...props} className={`title ${className}`}>
+    <Tag {...props} className={`title ${className}`} data-text={children}>
       {children}
     </Tag>
   );

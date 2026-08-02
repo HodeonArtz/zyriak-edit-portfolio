@@ -7,6 +7,8 @@
     font-size: 3em;
   }
   h2.title {
+    position: relative;
     font-size: 2em;
+    text-shadow: 0 3px 8.4px rgba(0, 0, 0, 0.25);
   }
 }
