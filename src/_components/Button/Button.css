@@ -114,3 +114,21 @@
 .glossy-button:active .glossy-button__gloss {
   opacity: 0.3;
 }
+
+.glossy-button--yt {
+  background: linear-gradient(to bottom, #f31111 0%, #e92121 69%, #9e2121 100%);
+}
+.glossy-button--tiktok {
+  background: linear-gradient(to bottom, #494949 0%, #3f3f3f 63%, #1a1a1a 100%);
+}
+.glossy-button--blue {
+  background: linear-gradient(to bottom, #3898d3 0%, #3670c2 63%, #0d2c75 100%);
+}
+.glossy-button--ig {
+  background: url("img/instagram-background-button.png");
+  background-size: cover;
+  box-shadow:
+    inset 0 -3px 9.2px 0px rgba(0, 0, 0, 0.21),
+    inset 0 0 9.3px 0 rgba(255, 255, 255, 0.12),
+    0 4px 7.8px 2px rgba(109, 86, 61, 0.32);
+}
