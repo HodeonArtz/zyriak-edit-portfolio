@@ -1,3 +1,4 @@
+@import url("../_styles/utils.css");
 @layer layout {
   .wrapper {
     display: flex;
@@ -11,7 +12,7 @@
     flex-direction: column;
     align-items: stretch;
     gap: 2em;
-    max-width: 67ch;
+    max-width: var(--main-content-width);
     width: 100%;
     padding-left: 0.625rem;
     padding-right: 0.625rem;

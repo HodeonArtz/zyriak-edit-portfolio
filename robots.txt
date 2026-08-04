@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /video-player*
+Allow: /index.html
+Allow: /

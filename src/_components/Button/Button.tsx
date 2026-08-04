@@ -20,6 +20,7 @@ const Button = ({
     >
       <img
         src="vectors/glass_overlay_button.svg"
+        alt="Button glass overlay"
         className="glossy-button__gloss"
       />
       <span className="glossy-button__content">{children}</span>

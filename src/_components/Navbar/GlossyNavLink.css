@@ -1,0 +1,20 @@
+@import url("../../_styles/utils.css");
+a.glossy-navlink {
+  text-decoration: none;
+  color: #8b8888;
+  font-weight: 300;
+  text-shadow: 0 0 2.6px white;
+}
+a.glossy-navlink:hover {
+  font-weight: 500;
+  color: #f27f0c;
+}
+a.glossy-navlink::after {
+  content: attr(data-text);
+  display: block;
+  font-weight: 500;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  pointer-events: none;
+}

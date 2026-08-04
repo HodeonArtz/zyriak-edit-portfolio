@@ -2,6 +2,10 @@
 @import "./_styles/utils.css";
 @import "./_styles/breakpoints.css";
 
+:root {
+  --main-content-width: 80ch;
+}
+
 @layer base {
   * {
     box-sizing: border-box;
@@ -21,7 +25,9 @@
   h4,
   h5,
   h6,
-  p {
+  p,
+  a,
+  hr {
     padding: 0;
     margin: 0;
   }

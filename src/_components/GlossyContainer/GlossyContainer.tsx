@@ -1,8 +1,13 @@
 import { type ReactNode } from "react";
 import "./GlossyContainer.css";
 
-const GlossyContainer = ({ children }: { children: ReactNode }) => {
-  return <section className="glossy-container">{children}</section>;
+interface GlossyContainerProps {
+  children?: ReactNode;
+  id?: string;
+}
+
+const GlossyContainer = (props: GlossyContainerProps) => {
+  return <section {...props} className="glossy-container" />;
 };
 
 export default GlossyContainer;

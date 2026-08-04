@@ -10,7 +10,8 @@ const ProfileSection = () => {
         alt="zyriak photo"
         className="profile__profile-picture"
         glossy
-      />
+      ></Img>
+
       <article className="profile__content">
         <BrandLogotype />
         <p className="profile__description">

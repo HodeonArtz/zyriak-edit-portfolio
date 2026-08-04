@@ -125,7 +125,7 @@
   background: linear-gradient(to bottom, #3898d3 0%, #3670c2 63%, #0d2c75 100%);
 }
 .glossy-button--ig {
-  background: url("img/instagram-background-button.png");
+  background: url("img/instagram-background-button.webp");
   background-size: cover;
   box-shadow:
     inset 0 -3px 9.2px 0px rgba(0, 0, 0, 0.21),

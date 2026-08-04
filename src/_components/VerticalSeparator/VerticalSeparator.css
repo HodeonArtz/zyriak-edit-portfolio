@@ -1,0 +1,7 @@
+hr.vertical-hr {
+  width: 1px;
+  border-width: 0;
+  border-top-width: 1.125em;
+  border-radius: 5px;
+  border-color: rgba(197, 197, 197, 0.6);
+}
