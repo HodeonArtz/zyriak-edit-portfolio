@@ -6,7 +6,9 @@
 .navbar__wrapper {
   position: sticky;
   top: 0;
-  height: 6.625em;
+  padding-top: 2.0625em;
+  padding-bottom: 2.0625em;
+
   width: 100%;
   z-index: 1;
   filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.12));
@@ -37,6 +39,9 @@
   display: flex;
   align-items: center;
   justify-content: end;
+}
+.navbar__wrapper--top {
+  align-items: start;
 }
 
 .navbar,
