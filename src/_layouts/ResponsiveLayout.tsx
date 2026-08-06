@@ -13,7 +13,7 @@ const ResponsiveLayout = () => {
     const smoother = ScrollSmoother.create({
       wrapper: ".wrapper",
       content: ".container",
-      smooth: 1,
+      smooth: 0.2,
     });
     return () => {
       smoother.kill();

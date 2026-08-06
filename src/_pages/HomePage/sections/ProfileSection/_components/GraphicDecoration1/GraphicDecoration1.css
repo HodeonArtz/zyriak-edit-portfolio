@@ -1,0 +1,65 @@
+#GraphicDecoration1 {
+  .incomplete-ring {
+    stroke-dasharray: 214 6;
+    stroke-width: 44px;
+  }
+  .center-circle {
+    fill: rgba(255, 255, 255, 1);
+  }
+  .incomplete-ring,
+  .big-ring-chain,
+  .most-outer-ring-chain,
+  .small-ring-chain,
+  .ring {
+    fill: none;
+    stroke: rgba(255, 255, 255, 1);
+    stroke-miterlimit: 10;
+  }
+
+  .big-ring-chain {
+    stroke-dasharray: 10 14;
+    stroke-width: 82px;
+  }
+
+  .most-outer-ring-chain {
+    stroke-width: 23px;
+  }
+
+  .most-outer-ring-chain,
+  .small-ring-chain {
+    stroke-dasharray: 4 8;
+  }
+
+  .small-ring-chain {
+    stroke-width: 22px;
+  }
+
+  .ring {
+    stroke-width: 12px;
+  }
+
+  .most-inner-ring-chain,
+  .incomplete-ring,
+  .most-outer-ring-chain {
+    transform-origin: 50% 50%;
+  }
+  .most-outer-ring-chain {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+    animation-name: outerRingChain;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes outerRingChain {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+  opacity: 0.25;
+  mix-blend-mode: soft-light;
+  overflow: visible;
+}

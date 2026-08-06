@@ -16,6 +16,9 @@ const Navbar = () => {
       paddingTop: "2.0625em",
       paddingBottom: "2.0625em",
     });
+    gsap.set(".navbar", {
+      borderRadius: "2em 0 0 2em",
+    });
     const navbarWidthAnim = gsap.to(".navbar", {
       scrollTrigger: {
         trigger: "section:first-child",
@@ -26,7 +29,7 @@ const Navbar = () => {
       ease: "power2.inOut",
       duration: 0.2,
       width: "100%",
-      borderRadius: "0px",
+      borderRadius: "0em",
     });
     const navbarPaddingAnim = gsap.to(".navbar__wrapper", {
       scrollTrigger: {

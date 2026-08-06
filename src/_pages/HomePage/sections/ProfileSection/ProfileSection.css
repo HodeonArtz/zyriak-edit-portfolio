@@ -1,11 +1,13 @@
 @import "../../../../_styles/breakpoints.css";
 
 .profile-section {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "picture content content";
   gap: 1.125em;
 }
+
 .profile__profile-picture {
   aspect-ratio: 1 / 1;
 
@@ -21,6 +23,19 @@
 
 .profile__description {
   font-size: 1.25em;
+}
+
+.profile__whitespace-decoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64em;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-36%, -50%);
+  z-index: -1;
 }
 
 @media (--mobile) {

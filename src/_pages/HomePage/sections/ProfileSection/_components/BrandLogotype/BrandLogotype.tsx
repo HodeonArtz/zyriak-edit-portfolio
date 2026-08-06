@@ -1,4 +1,4 @@
-import Title from "../../../../../_components/Title/Title";
+import Title from "../../../../../../_components/Title/Title";
 
 import "./BrandLogotype.css";
 

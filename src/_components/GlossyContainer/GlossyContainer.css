@@ -9,6 +9,7 @@
   );
   box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.12);
   backdrop-filter: blur(1em);
+  overflow: hidden;
   @mixin border-radius;
 }
 .glossy-container::after {

@@ -1,10 +1,14 @@
 import Img from "../../../../_components/Img/Img";
-import BrandLogotype from "./_components/BrandLogotype";
+import BrandLogotype from "./_components/BrandLogotype/BrandLogotype";
+import GraphicDecoration1 from "./_components/GraphicDecoration1/GraphicDecoration1";
 import "./ProfileSection.css";
 
 const ProfileSection = () => {
   return (
     <div className="profile-section">
+      <div className="profile__whitespace-decoration">
+        <GraphicDecoration1 />
+      </div>
       <Img
         src="img/zyriak-profile-photo.jpg"
         alt="zyriak photo"
