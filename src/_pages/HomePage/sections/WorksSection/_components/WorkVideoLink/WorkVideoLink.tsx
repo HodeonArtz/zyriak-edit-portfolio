@@ -22,19 +22,19 @@ const WorkVideoLink = ({ href: link, ...imgProps }: WorkVideoLinkProps) => {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g clip-path="url(#clip0_673_324)">
+        <g clipPath="url(#clip0_673_324)">
           <g filter="url(#filter0_dii_673_324)">
             <path
               d="M30.5 20.3332V101.667C30.4997 102.571 30.7408 103.459 31.1984 104.239C31.6559 105.02 32.3133 105.664 33.1028 106.105C33.8923 106.546 34.7852 106.769 35.6895 106.75C36.5938 106.731 37.4766 106.471 38.247 105.998L104.33 65.3309C105.07 64.876 105.682 64.2392 106.106 63.481C106.53 62.7228 106.752 61.8686 106.752 60.9998C106.752 60.1311 106.53 59.2769 106.106 58.5187C105.682 57.7605 105.07 57.1237 104.33 56.6688L38.247 16.0022C37.4766 15.5282 36.5938 15.2684 35.6895 15.2495C34.7852 15.2306 33.8923 15.4534 33.1028 15.8947C32.3133 16.3361 31.6559 16.9801 31.1984 17.7603C30.7408 18.5405 30.4997 19.4287 30.5 20.3332Z"
               fill="url(#paint0_linear_673_324)"
-              shape-rendering="crispEdges"
+              shapeRendering="crispEdges"
             />
             <path
               d="M35.7734 11.2504C37.389 11.2842 38.9664 11.7484 40.3428 12.5951H40.3438L106.425 53.2611L106.67 53.4174C107.882 54.217 108.886 55.2967 109.597 56.5668C110.354 57.9214 110.752 59.4474 110.752 60.9994C110.752 62.5516 110.354 64.0782 109.597 65.433C108.839 66.7872 107.747 67.9241 106.426 68.7367L40.3438 109.404L40.3428 109.405C38.9664 110.251 37.389 110.716 35.7734 110.749C34.1577 110.783 32.562 110.385 31.1514 109.596C29.7407 108.807 28.5656 107.657 27.748 106.263C26.9305 104.869 26.4995 103.282 26.5 101.665V20.3334C26.4997 18.7175 26.9306 17.1306 27.748 15.7367C28.5656 14.3426 29.7407 13.1923 31.1514 12.4037C32.562 11.6151 34.1577 11.2166 35.7734 11.2504Z"
               stroke="url(#paint1_linear_673_324)"
-              stroke-width="8"
-              stroke-linejoin="round"
-              shape-rendering="crispEdges"
+              strokeWidth="8"
+              strokeLinejoin="round"
+              shapeRendering="crispEdges"
             />
           </g>
         </g>
@@ -46,9 +46,9 @@ const WorkVideoLink = ({ href: link, ...imgProps }: WorkVideoLinkProps) => {
             width="116.252"
             height="131.503"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -118,8 +118,8 @@ const WorkVideoLink = ({ href: link, ...imgProps }: WorkVideoLinkProps) => {
             y2="45.5973"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#EE3F01" stop-opacity="0.56" />
-            <stop offset="1" stop-color="#FACC12" />
+            <stop stopColor="#EE3F01" stopOpacity="0.56" />
+            <stop offset="1" stopColor="#FACC12" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_673_324"
@@ -129,8 +129,8 @@ const WorkVideoLink = ({ href: link, ...imgProps }: WorkVideoLinkProps) => {
             y2="106.751"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" />
-            <stop offset="1" stop-color="white" stop-opacity="0.26" />
+            <stop stopColor="white" />
+            <stop offset="1" stopColor="white" stopOpacity="0.26" />
           </linearGradient>
           <clipPath id="clip0_673_324">
             <rect width="122" height="122" fill="white" />
