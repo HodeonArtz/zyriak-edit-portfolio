@@ -1,18 +1,15 @@
 import React, { type ReactNode } from "react";
 import "./Img.css";
 
-const Img = ({
-  glossy,
-  className,
-  children,
-  ...imgProps
-}: {
-  glossy?: boolean | undefined;
-  children?: ReactNode;
-} & React.DetailedHTMLProps<
+export interface ImgProps extends React.DetailedHTMLProps<
   React.ImgHTMLAttributes<HTMLImageElement>,
   HTMLImageElement
->) => {
+> {
+  glossy?: boolean | undefined;
+  children?: ReactNode;
+}
+
+const Img = ({ glossy, className, children, ...imgProps }: ImgProps) => {
   if (!glossy) return <img {...imgProps} className={className} />;
   return (
     <div className={`glossy-image ${className}`}>

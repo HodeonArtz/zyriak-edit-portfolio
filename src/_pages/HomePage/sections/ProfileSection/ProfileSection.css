@@ -26,9 +26,6 @@
 }
 
 .profile__whitespace-decoration {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 64em;
   aspect-ratio: 1 / 1;
   position: absolute;
@@ -44,5 +41,16 @@
     flex-direction: column;
     align-items: center;
     gap: 1.5em;
+  }
+  .profile__whitespace-decoration {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    left: 0%;
+    top: 0;
+  }
+  .profile__whitespace-decoration > :first-child {
+    width: 64em;
   }
 }

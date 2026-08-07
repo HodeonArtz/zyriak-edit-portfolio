@@ -1,25 +1,22 @@
 import Button from "../../../../_components/Button/Button";
-import Img from "../../../../_components/Img/Img";
 import Title from "../../../../_components/Title/Title";
 import "./WorksSection.css";
+import editsConfig from "../../../../../public/edits.json";
+import WorkVideoLink from "./_components/WorkVideoLink/WorkVideoLink";
 
 const WorksSection = () => {
   return (
     <div className="works-section">
       <Title as="h2">My works</Title>
       <article className="works__edits">
-        <Img glossy src="" alt="edit-1" />
-        <Img glossy src="" alt="edit-2" />
-        <Img glossy src="" alt="edit-3" />
-        <Img glossy src="" alt="edit-4" />
-        <Img glossy src="" alt="edit-5" />
-        <Img glossy src="" alt="edit-6" />
-        <Img glossy src="" alt="edit-7" />
-        <Img glossy src="" alt="edit-8" />
-        <Img glossy src="" alt="edit-9" />
-        <Img glossy src="" alt="edit-10" />
-        <Img glossy src="" alt="edit-11" />
-        <Img glossy src="" alt="edit-12" />
+        {editsConfig.edits.map(({ id, alt, img: src, url }) => (
+          <WorkVideoLink
+            href={url}
+            key={`work-video-link-${id}`}
+            alt={alt}
+            src={src}
+          />
+        ))}
       </article>
 
       <div className="works__goto-socials-button-container">

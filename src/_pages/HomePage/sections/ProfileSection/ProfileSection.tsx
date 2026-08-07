@@ -7,7 +7,9 @@ const ProfileSection = () => {
   return (
     <div className="profile-section">
       <div className="profile__whitespace-decoration">
-        <GraphicDecoration1 />
+        <div className="decoration-wrapper">
+          <GraphicDecoration1 />
+        </div>
       </div>
       <Img
         src="img/zyriak-profile-photo.jpg"
