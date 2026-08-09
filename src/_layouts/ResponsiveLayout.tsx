@@ -13,16 +13,20 @@ const ResponsiveLayout = () => {
     const smoother = ScrollSmoother.create({
       wrapper: ".wrapper",
       content: ".container",
+      effects: true,
       smooth: 0.2,
     });
-    return () => {
+
+    /*     return () => {
       smoother.kill();
-    };
+    }; */
   }, []);
   return (
     <div className="wrapper">
       <Navbar />
       <main className="container">
+        <img src="img/dorfic2.jpg" alt="" className="parallax-bg" />
+        {/* TODO: cambiar fondo por bg gradiente personalizado */}
         <Outlet />
       </main>
     </div>

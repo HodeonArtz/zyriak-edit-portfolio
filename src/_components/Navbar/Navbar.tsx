@@ -21,7 +21,7 @@ const Navbar = () => {
     });
     const navbarWidthAnim = gsap.to(".navbar", {
       scrollTrigger: {
-        trigger: "section:first-child",
+        trigger: "section:first-of-type",
         start: "-=100 top",
         end: "top top",
         scrub: 0.5,
