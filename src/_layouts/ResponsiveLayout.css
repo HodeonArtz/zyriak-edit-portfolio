@@ -6,6 +6,7 @@
     align-items: center;
     position: relative;
     width: 100%;
+
     perspective: 20px;
   }
   .container {
@@ -17,20 +18,29 @@
     width: 100%;
     padding-left: 0.625rem;
     padding-right: 0.625rem;
-
     transform-style: preserve-3d;
   }
   .container > * {
     width: 100%;
   }
+  .bg-wrapper {
+    transform-style: preserve-3d;
+
+    top: -106px;
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100%;
+    transform: translateZ(-20px) scale(2);
+  }
   .parallax-bg {
     display: block;
     position: absolute;
     width: 100vw;
-    height: calc(100% + 200px);
+    height: 100%;
     object-fit: cover;
-    top: -200px;
-    transform: translateZ(-20px) scale(2);
+    top: 0px;
     z-index: -1;
+    transform: translateZ(-40px) scale(2);
   }
 }
