@@ -27,13 +27,13 @@ const ResponsiveLayout = () => {
       <main className="container">
         <div className="bg-wrapper">
           <img
-            src="img/dorfic2.jpg"
+            src="vectors/dorfic-gradient-bg.svg"
             alt="dorfic-gradient-bg.svg"
             className="parallax-bg"
           />
-        </div>
 
-        {/* TODO: cambiar fondo por bg gradiente personalizado */}
+          <div className="bg__grid" />
+        </div>
         <Outlet />
       </main>
     </div>

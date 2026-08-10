@@ -7,7 +7,7 @@
     position: relative;
     width: 100%;
 
-    perspective: 20px;
+    perspective: 800px;
   }
   .container {
     display: flex;
@@ -23,6 +23,10 @@
   .container > * {
     width: 100%;
   }
+  .container > *:not(.bg-wrapper) {
+    transform-style: flat;
+    z-index: 10000;
+  }
   .bg-wrapper {
     transform-style: preserve-3d;
 
@@ -31,7 +35,6 @@
     z-index: -1;
     width: 100vw;
     height: 100%;
-    transform: translateZ(-20px) scale(2);
   }
   .parallax-bg {
     display: block;
@@ -41,6 +44,28 @@
     object-fit: cover;
     top: 0px;
     z-index: -1;
-    transform: translateZ(-40px) scale(2);
+    transform: translateZ(-8000px) scale(11);
+  }
+  .bg__grid {
+    background-image: url("vectors/grid_dorfic_for_mirror.svg");
+    background-size: 1000px 1000px;
+    background-repeat: repeat;
+    width: 3000px;
+    height: 1500px;
+    opacity: 1;
+    transform: translateX(-1211px) translateY(1900px) translateZ(-4520px)
+      rotateX(70deg) rotateY(10deg) rotateZ(-0deg) scale(4);
+    animation: infinite bg-grid-moving-animation 100s linear;
+  }
+
+  @keyframes bg-grid-moving-animation {
+    from {
+      background-position-x: 100%;
+      background-position-y: 100%;
+    }
+    to {
+      background-position-x: 0%;
+      background-position-y: 0%;
+    }
   }
 }
