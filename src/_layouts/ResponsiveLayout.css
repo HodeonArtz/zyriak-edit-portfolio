@@ -6,7 +6,6 @@
     align-items: center;
     position: relative;
     width: 100%;
-
     perspective: 1200px;
   }
   .container {
@@ -47,10 +46,11 @@
     transform: translateZ(-12000px) scale(11);
   }
   .bg__grid {
-    position: relative;
     background-image: url("vectors/grid_dorfic_for_mirror.svg");
     background-size: 1000px 1000px;
-
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 1500px;
     height: 1500px;
     opacity: 0.6;
@@ -79,5 +79,24 @@
       background-position-x: 0%;
       background-position-y: 0%;
     }
+  }
+
+  .bg__ellipse-burn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-511px) translateY(3302px) translateZ(-7520px)
+      rotateX(71deg) rotateY(13deg) rotateZ(8deg) scale(11);
+  }
+
+  .bg__ellipse-burn-dark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-611px) translateY(4902px) translateZ(-7520px)
+      rotateX(71deg) rotateY(17deg) rotateZ(8deg) scale(11);
+  }
+  .space {
+    height: 60em;
   }
 }
