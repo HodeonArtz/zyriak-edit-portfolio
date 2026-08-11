@@ -7,7 +7,7 @@
     position: relative;
     width: 100%;
 
-    perspective: 800px;
+    perspective: 1200px;
   }
   .container {
     display: flex;
@@ -44,18 +44,30 @@
     object-fit: cover;
     top: 0px;
     z-index: -1;
-    transform: translateZ(-8000px) scale(11);
+    transform: translateZ(-12000px) scale(11);
   }
   .bg__grid {
+    position: relative;
     background-image: url("vectors/grid_dorfic_for_mirror.svg");
     background-size: 1000px 1000px;
-    background-repeat: repeat;
-    width: 3000px;
+
+    width: 1500px;
     height: 1500px;
-    opacity: 1;
-    transform: translateX(-1211px) translateY(1900px) translateZ(-4520px)
-      rotateX(70deg) rotateY(10deg) rotateZ(-0deg) scale(4);
+    opacity: 0.6;
+    transform: translateX(-912px) translateY(1900px) translateZ(-5520px)
+      rotateX(71deg) rotateY(7deg) rotateZ(8deg) scale(8);
     animation: infinite bg-grid-moving-animation 100s linear;
+    -webkit-mask-image: url("vectors/bg-grid-gradient-mask.svg");
+    mask-image: url("vectors/bg-grid-gradient-mask.svg");
+
+    -webkit-mask-mode: luminance;
+    mask-mode: luminance;
+
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
   }
 
   @keyframes bg-grid-moving-animation {
