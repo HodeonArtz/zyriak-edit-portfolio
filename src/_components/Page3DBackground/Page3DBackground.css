@@ -1,0 +1,71 @@
+.bg-wrapper {
+  user-select: none;
+  transform-style: preserve-3d;
+
+  top: -106px;
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+}
+.parallax-bg {
+  display: block;
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  top: 0px;
+  z-index: -1;
+  transform: translateZ(-12000px) scale(11);
+}
+.bg__grid {
+  background-image: url("vectors/grid_dorfic_for_mirror.svg");
+  background-size: 1000px 1000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1500px;
+  height: 1500px;
+  opacity: 0.6;
+  transform: translateX(-912px) translateY(1900px) translateZ(-5520px)
+    rotateX(71deg) rotateY(7deg) rotateZ(8deg) scale(8);
+  animation: infinite bg-grid-moving-animation 120s linear;
+  -webkit-mask-image: url("vectors/bg-grid-gradient-mask.svg");
+  mask-image: url("vectors/bg-grid-gradient-mask.svg");
+
+  -webkit-mask-mode: luminance;
+  mask-mode: luminance;
+
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+@keyframes bg-grid-moving-animation {
+  from {
+    background-position-x: -100%;
+    background-position-y: -300%;
+  }
+  to {
+    background-position-x: 0%;
+    background-position-y: 0%;
+  }
+}
+
+.bg__ellipse-burn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-511px) translateY(3302px) translateZ(-7520px)
+    rotateX(71deg) rotateY(13deg) rotateZ(8deg) scale(11);
+}
+
+.bg__ellipse-burn-dark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-611px) translateY(4902px) translateZ(-7520px)
+    rotateX(71deg) rotateY(17deg) rotateZ(8deg) scale(11);
+}
