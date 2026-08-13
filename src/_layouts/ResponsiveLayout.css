@@ -27,6 +27,7 @@
     z-index: 10000;
   }
   .bg-wrapper {
+    user-select: none;
     transform-style: preserve-3d;
 
     top: -106px;
@@ -56,7 +57,7 @@
     opacity: 0.6;
     transform: translateX(-912px) translateY(1900px) translateZ(-5520px)
       rotateX(71deg) rotateY(7deg) rotateZ(8deg) scale(8);
-    animation: infinite bg-grid-moving-animation 100s linear;
+    animation: infinite bg-grid-moving-animation 120s linear;
     -webkit-mask-image: url("vectors/bg-grid-gradient-mask.svg");
     mask-image: url("vectors/bg-grid-gradient-mask.svg");
 
@@ -72,8 +73,8 @@
 
   @keyframes bg-grid-moving-animation {
     from {
-      background-position-x: 100%;
-      background-position-y: 100%;
+      background-position-x: -100%;
+      background-position-y: -300%;
     }
     to {
       background-position-x: 0%;
