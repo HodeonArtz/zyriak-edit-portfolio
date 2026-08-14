@@ -18,9 +18,9 @@ const ResponsiveLayout = () => {
       smooth: 0.2,
     });
 
-    /*     return () => {
+    return () => {
       smoother.kill();
-    }; */
+    };
   }, []);
   return (
     <div className="wrapper">

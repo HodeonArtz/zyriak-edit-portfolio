@@ -1,3 +1,4 @@
+import AnimatedDorficWaveGraphic from "../AnimatedDorficWaveGraphic/AnimatedDorficWaveGraphic";
 import "./Page3DBackground.css";
 
 const Page3DBackground = () => {
@@ -18,7 +19,7 @@ const Page3DBackground = () => {
         alt="dorfic-gradient-bg.svg"
         className="parallax-bg"
       />
-
+      <AnimatedDorficWaveGraphic />
       <div className="bg__grid" />
     </div>
   );
