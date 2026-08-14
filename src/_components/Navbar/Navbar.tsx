@@ -28,7 +28,7 @@ const Navbar = () => {
       },
       ease: "power2.inOut",
       duration: 0.2,
-      width: "100%",
+      width: "110%",
       borderRadius: "0em",
     });
     const navbarPaddingAnim = gsap.to(".navbar__wrapper", {

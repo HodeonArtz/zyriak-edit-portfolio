@@ -2,73 +2,73 @@
   "edits": [
     {
       "id": 1,
-      "img": "img/thumbnails/edit-1-arcane.jpeg",
+      "img": "img/thumbnails/optimized/edit-1-arcane.webp",
       "alt": "Arcane edit",
       "url": "https://www.instagram.com/reel/DCjVGj_M7vj/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
     {
       "id": 2,
-      "img": "img/thumbnails/edit-2-zero-two.png",
+      "img": "img/thumbnails/optimized/edit-2-zero-two.webp",
       "alt": "Zero Two edit",
       "url": "https://www.instagram.com/reel/DO5zwHRjJFs/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
     {
       "id": 3,
-      "img": "img/thumbnails/edit-3-jane-doe-zenless.jpg",
+      "img": "img/thumbnails/optimized/edit-3-jane-doe-zenless.webp",
       "alt": "Jane Doe from Zenless edit",
       "url": "https://www.instagram.com/reel/DBQ__kFuAxM/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
     {
       "id": 4,
-      "img": "img/thumbnails/edit-4-genji.jpeg",
+      "img": "img/thumbnails/optimized/edit-4-genji.webp",
       "alt": "Genji from Overwatch edit",
       "url": "https://www.instagram.com/reel/DCMUSQQNrEd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
     {
       "id": 5,
-      "img": "img/thumbnails/edit-5-tony-stark.jpg",
+      "img": "img/thumbnails/optimized/edit-5-tony-stark.webp",
       "alt": "Tony Stark/Robert Downey Jr. edit",
       "url": "https://www.instagram.com/reel/DBQ70u5sR_Q/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
     {
       "id": 6,
-      "img": "img/thumbnails/edit-6-overwatch.jpg",
+      "img": "img/thumbnails/optimized/edit-6-overwatch.webp",
       "alt": "Overwatch edit",
       "url": "https://www.instagram.com/reel/DBQ9VCCs537/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
     {
       "id": 7,
-      "img": "img/thumbnails/edit-7-noctis-ff.jpg",
+      "img": "img/thumbnails/optimized/edit-7-noctis-ff.webp",
       "alt": "Noctis from Final Fantasy edit",
       "url": "https://www.instagram.com/reel/DBQ_br4v3Rh/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
     {
       "id": 8,
-      "img": "img/thumbnails/edit-8-jinx.jpeg",
+      "img": "img/thumbnails/optimized/edit-8-jinx.webp",
       "alt": "Jinx LoL edit",
       "url": "https://www.instagram.com/reel/DCowmvHNan8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
     {
       "id": 9,
-      "img": "img/thumbnails/edit-9-hu-tao.jpeg",
+      "img": "img/thumbnails/optimized/edit-9-hu-tao.webp",
       "alt": "Hu Tao edit",
       "url": "https://www.instagram.com/reel/DCfWzy-MKVx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
     {
       "id": 10,
-      "img": "img/thumbnails/edit-10-akali.jpeg",
+      "img": "img/thumbnails/optimized/edit-10-akali.webp",
       "alt": "Akali edit",
       "url": "https://www.instagram.com/reel/DBTISzCPRSJ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
     {
       "id": 11,
-      "img": "img/thumbnails/edit-11-fast-and-furious.jpg",
+      "img": "img/thumbnails/optimized/edit-11-fast-and-furious.webp",
       "alt": "Fast and Furious Series edit",
       "url": "https://www.instagram.com/reel/DQ9OXfZDXSw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
     {
       "id": 12,
-      "img": "img/thumbnails/edit-12-world-cup.jpg",
+      "img": "img/thumbnails/optimized/edit-12-world-cup.webp",
       "alt": "World Cup 2026 edit",
       "url": "https://www.instagram.com/reel/DaxO07vx_sH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     }
