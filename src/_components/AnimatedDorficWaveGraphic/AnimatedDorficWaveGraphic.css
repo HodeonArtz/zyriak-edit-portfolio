@@ -1,61 +1,63 @@
-.rectangle-ref,
-.rectangle-ref-2,
-.ring-inner,
-.ring-incomplete-inner,
-.ring-outer {
-  fill: none;
-}
+#AnimatedDorficWaveGraphic {
+  .rectangle-ref,
+  .rectangle-ref-2,
+  .ring-inner,
+  .ring-incomplete-inner,
+  .ring-outer {
+    fill: none;
+  }
 
-.rectangle-ref-2,
-.rectangle-ref-3,
-.rectangle-ref-4 {
-  opacity: 0;
-}
+  .rectangle-ref-2,
+  .rectangle-ref-3,
+  .rectangle-ref-4 {
+    opacity: 0;
+  }
 
-.ring-inner {
-  stroke: #ffe1a6;
-}
+  .ring-inner {
+    stroke: #ffe1a6;
+  }
 
-.ring-inner,
-.ring-incomplete-inner,
-.ring-outer {
-  stroke-miterlimit: 10;
-}
+  .ring-inner,
+  .ring-incomplete-inner,
+  .ring-outer {
+    stroke-miterlimit: 10;
+  }
 
-.ring-inner,
-.ring-outer {
-  stroke-width: 4px;
-}
+  .ring-inner,
+  .ring-outer {
+    stroke-width: 4px;
+  }
 
-.chain-outer {
-  fill: #ffd321;
-}
+  .chain-outer {
+    fill: #ffd321;
+  }
 
-.module {
-  fill: #fff1ba;
-}
+  .module {
+    fill: #fff1ba;
+  }
 
-.ring-incomplete-inner {
-  stroke: url(#Degradado_sin_nombre_1663);
-  stroke-width: 30px;
-}
+  .ring-incomplete-inner {
+    stroke: url(#Degradado_sin_nombre_1663);
+    stroke-width: 30px;
+  }
 
-.ring-stepped {
-  fill: url(#Degradado_sin_nombre_1610);
-}
+  .ring-stepped {
+    fill: url(#Degradado_sin_nombre_1610);
+  }
 
-.rectangle-ref-3 {
-  fill: url(#Degradado_sin_nombre_1038);
-}
+  .rectangle-ref-3 {
+    fill: url(#Degradado_sin_nombre_1038);
+  }
 
-.nucleus {
-  fill: url(#Degradado_sin_nombre_1610-3);
-}
+  .nucleus {
+    fill: url(#Degradado_sin_nombre_1610-3);
+  }
 
-.filled-modules {
-  fill: url(#Degradado_sin_nombre_1610-2);
-}
+  .filled-modules {
+    fill: url(#Degradado_sin_nombre_1610-2);
+  }
 
-.ring-outer {
-  stroke: #fff1ba;
+  .ring-outer {
+    stroke: #fff1ba;
+  }
 }
