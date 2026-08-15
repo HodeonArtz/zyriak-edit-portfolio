@@ -69,3 +69,7 @@
   transform: translateX(-611px) translateY(4902px) translateZ(-7520px)
     rotateX(71deg) rotateY(17deg) rotateZ(8deg) scale(11);
 }
+.bg__dorfic-wave-graphic {
+  transform: translateX(-1427px) translateY(969px) translateZ(-7821px)
+    rotateX(62deg) rotateY(24deg) rotateZ(-14deg) scale(5);
+}

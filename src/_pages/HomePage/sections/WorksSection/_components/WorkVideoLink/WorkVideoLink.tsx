@@ -8,12 +8,7 @@ interface WorkVideoLinkProps extends ImgProps {
 const WorkVideoLink = ({ href: link, ...imgProps }: WorkVideoLinkProps) => {
   return (
     <a href={link} className="work-video-link" target="_blank">
-      <Img
-        className="work-video-link__thumbnail"
-        loading="lazy"
-        glossy
-        {...imgProps}
-      />
+      <Img className="work-video-link__thumbnail" glossy {...imgProps} />
       <svg
         className="work-video-link__play-button-icon"
         width="122"

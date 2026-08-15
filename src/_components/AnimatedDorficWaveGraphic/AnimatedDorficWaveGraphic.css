@@ -60,4 +60,41 @@
   .ring-outer {
     stroke: #fff1ba;
   }
+  /* ------------------ */
+  .rotate-animation {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+    animation-name: antiClockwiseRotation;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .rotate-anticlockwise-antimation {
+    animation-direction: reverse;
+  }
+
+  #chain-inner {
+    animation-duration: 50s;
+  }
+  #group-ring-stepped {
+    animation-duration: 160s;
+  }
+  #group-ring-incomplete-outer {
+    animation-duration: 30s;
+  }
+  #group-ring-incomplete-inner {
+    animation-duration: 35s;
+  }
+  #group-chain-incomplete {
+    animation-duration: 20s;
+  }
+
+  @keyframes antiClockwiseRotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
 }

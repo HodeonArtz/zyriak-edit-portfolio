@@ -19,7 +19,7 @@ const Page3DBackground = () => {
         alt="dorfic-gradient-bg.svg"
         className="parallax-bg"
       />
-      <AnimatedDorficWaveGraphic />
+      <AnimatedDorficWaveGraphic className="bg__dorfic-wave-graphic" />
       <div className="bg__grid" />
     </div>
   );
