@@ -3,6 +3,7 @@
   .rectangle-ref-2,
   .ring-inner,
   .ring-incomplete-inner,
+  .ring-incomplete-outer,
   .ring-outer {
     fill: none;
   }
@@ -19,6 +20,7 @@
 
   .ring-inner,
   .ring-incomplete-inner,
+  .ring-incomplete-outer,
   .ring-outer {
     stroke-miterlimit: 10;
   }
@@ -38,6 +40,12 @@
 
   .ring-incomplete-inner {
     stroke: url(#Degradado_sin_nombre_1663);
+  }
+  .ring-incomplete-outer {
+    stroke: url(#Degradado_sin_nombre_1653);
+  }
+  .ring-incomplete-inner,
+  .ring-incomplete-outer {
     stroke-width: 30px;
   }
 

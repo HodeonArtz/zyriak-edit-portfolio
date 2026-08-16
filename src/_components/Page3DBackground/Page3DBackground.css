@@ -1,3 +1,4 @@
+@import url("../../_styles/breakpoints.css");
 .bg-wrapper {
   user-select: none;
   transform-style: preserve-3d;
@@ -70,6 +71,21 @@
     rotateX(71deg) rotateY(17deg) rotateZ(8deg) scale(11);
 }
 .bg__dorfic-wave-graphic {
+  position: absolute;
+  top: 0;
+  left: 0;
   transform: translateX(-1427px) translateY(969px) translateZ(-7821px)
     rotateX(62deg) rotateY(24deg) rotateZ(-14deg) scale(5);
+}
+@media (--large-desktop) {
+  .bg__dorfic-wave-graphic {
+    transform: translateX(-1427px) translateY(969px) translateZ(-7821px)
+      rotateX(62deg) rotateY(24deg) rotateZ(-14deg) scale(3.7);
+  }
+}
+@media (--mobile) {
+  .bg__dorfic-wave-graphic {
+    transform: translateX(-1427px) translateY(969px) translateZ(-7821px)
+      rotateX(62deg) rotateY(24deg) rotateZ(-14deg) scale(10);
+  }
 }
