@@ -53,6 +53,10 @@
   padding-bottom: 0.75em;
   background: linear-gradient(to bottom, #fffbf3 0%, #e0deda 84%, #dcd4c6 100%);
 }
+.navbar--white .navbar,
+.navbar--white .navbar__spacebar {
+  background: linear-gradient(to bottom, #fff 0%, #dbdbdb 84%, #d7d7d7 100%);
+}
 .navbar::before,
 .navbar__spacebar::before {
   content: "";

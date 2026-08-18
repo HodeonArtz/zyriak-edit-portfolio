@@ -49,7 +49,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="navbar__wrapper">
+    <div className="navbar__wrapper navbar--white">
       <div className="navbar__content">
         <nav className="navbar">
           <GlossyNavLink to="/">Home</GlossyNavLink>

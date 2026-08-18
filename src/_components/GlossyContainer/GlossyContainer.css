@@ -12,6 +12,13 @@
   overflow: hidden;
   @mixin border-radius;
 }
+.glossy-container--dorfic {
+  background: linear-gradient(
+    30deg,
+    rgba(255, 119, 0, 0.8) 0%,
+    rgba(255, 204, 74, 0.8) 100%
+  );
+}
 .glossy-container::after {
   @mixin border-radius;
 

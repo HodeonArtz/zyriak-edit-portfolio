@@ -7,7 +7,9 @@ interface GlossyContainerProps {
 }
 
 const GlossyContainer = (props: GlossyContainerProps) => {
-  return <section {...props} className="glossy-container" />;
+  return (
+    <section {...props} className="glossy-container glossy-container--dorfic" />
+  );
 };
 
 export default GlossyContainer;
