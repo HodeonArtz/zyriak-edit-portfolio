@@ -16,7 +16,7 @@
     min-height: 100vh;
   }
   body {
-    background-image: url("/img/dorfic2.jpg");
+    background-color: #eee;
     background-size: cover;
   }
   h1,

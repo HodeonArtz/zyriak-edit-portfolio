@@ -15,7 +15,7 @@ const Page3DBackground = () => {
         className="bg__ellipse-burn"
       />
       <img
-        src="vectors/dorfic-gradient-bg.svg"
+        src="vectors/white-gradient-bg.svg"
         alt="dorfic-gradient-bg.svg"
         className="parallax-bg"
       />
