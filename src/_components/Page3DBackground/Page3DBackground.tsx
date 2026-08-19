@@ -1,3 +1,4 @@
+import AnimatedHexagonGrid from "../AnimatedHexagonGrid/AnimatedHexagonGrid";
 import "./Page3DBackground.css";
 
 const Page3DBackground = () => {
@@ -18,8 +19,13 @@ const Page3DBackground = () => {
         alt="dorfic-ring-underlay.svg"
         className="bg__dorfic-ring-underlay"
       />
-
       <div className="bg__grid" />
+      <div className="bg-hexagon-grid">
+        <AnimatedHexagonGrid />
+        <AnimatedHexagonGrid />
+        <AnimatedHexagonGrid />
+        <AnimatedHexagonGrid />
+      </div>
     </div>
   );
 };

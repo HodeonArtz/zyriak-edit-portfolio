@@ -2,12 +2,24 @@
 .bg-wrapper {
   user-select: none;
   transform-style: preserve-3d;
-
+  display: flex;
+  justify-content: center;
   top: -106px;
   position: fixed;
   z-index: -1;
   width: 100vw;
   height: 100%;
+}
+
+.bg__grid,
+.bg__dorfic-ring,
+.bg__dorfic-ring-underlay,
+.bg__ellipse-burn,
+.bg__ellipse-burn-dark,
+.bg__dorfic-wave-graphic {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .parallax-bg {
   display: block;
@@ -22,9 +34,6 @@
 .bg__grid {
   background-image: url("vectors/grid_dorfic_for_mirror.svg");
   background-size: 1000px 1000px;
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 1500px;
   height: 1500px;
   opacity: 0.6;
@@ -56,66 +65,62 @@
 }
 
 .bg__ellipse-burn {
-  position: absolute;
-  top: 0;
-  left: 0;
   transform: translateX(-511px) translateY(3302px) translateZ(-7520px)
     rotateX(71deg) rotateY(13deg) rotateZ(8deg) scale(11);
 }
 
 .bg__ellipse-burn-dark {
-  position: absolute;
-  top: 0;
-  left: 0;
   transform: translateX(-611px) translateY(4902px) translateZ(-7520px)
     rotateX(71deg) rotateY(17deg) rotateZ(8deg) scale(11);
 }
 .bg__dorfic-wave-graphic {
-  position: absolute;
-  top: 0;
-  left: 0;
   transform: translateX(-1427px) translateY(969px) translateZ(-7821px)
     rotateX(62deg) rotateY(24deg) rotateZ(-14deg) scale(5);
 }
+
 .bg__dorfic-ring {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateX(4px) translateY(-1300px) translateZ(-7321px)
-    rotateX(54deg) rotateY(-11deg) rotateZ(0deg) scaleX(-4.62) scaleY(-3.82);
+  min-width: 1800px;
+  max-width: 140%;
+  transform: translateX(-400px) translateY(-1300px) translateZ(-7321px)
+    rotateX(60deg) rotateY(-11deg) rotateZ(0deg) scaleX(-4.62) scaleY(-3.82);
   animation: infinite dorfic-ring-rotating 120s linear;
 }
 .bg__dorfic-ring-underlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateX(4px) translateY(-1320px) translateZ(-7321px)
-    rotateX(54deg) rotateY(-11deg) rotateZ(10deg) scaleX(-4.72) scaleY(-3.92);
+  min-width: 1800px;
+  max-width: 140%;
+  transform: translateX(-400px) translateY(-1320px) translateZ(-7321px)
+    rotateX(60deg) rotateY(-11deg) rotateZ(10deg) scaleX(-4.72) scaleY(-3.92);
   animation: infinite dorfic-underlay-ring-rotating 120s linear;
 }
-
+.bg-hexagon-grid {
+  display: grid;
+  width: fit-content;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
 @keyframes dorfic-ring-rotating {
   0% {
-    transform: translateX(4px) translateY(-1300px) translateZ(-7321px)
-      rotateX(54deg) rotateY(-16deg) rotateZ(0deg) scaleX(-4.62) scaleY(-3.82);
+    transform: translateX(-400px) translateY(-1300px) translateZ(-7321px)
+      rotateX(60deg) rotateY(-11deg) rotateZ(0deg) scaleX(-4.62) scaleY(-3.82);
   }
   50% {
-    transform: translateX(4px) translateY(-1300px) translateZ(-7321px)
-      rotateX(54deg) rotateY(-16deg) rotateZ(180deg) scaleX(-4.02) scaleY(-3.82);
+    transform: translateX(-400px) translateY(-1300px) translateZ(-7321px)
+      rotateX(60deg) rotateY(-11deg) rotateZ(180deg) scaleX(-4.02) scaleY(-3.82);
   }
   100% {
-    transform: translateX(4px) translateY(-1300px) translateZ(-7321px)
-      rotateX(54deg) rotateY(-16deg) rotateZ(360deg) scaleX(-4.62) scaleY(-3.82);
+    transform: translateX(-400px) translateY(-1300px) translateZ(-7321px)
+      rotateX(60deg) rotateY(-11deg) rotateZ(360deg) scaleX(-4.62) scaleY(-3.82);
   }
 }
 @keyframes dorfic-underlay-ring-rotating {
   0% {
-    transform: translateX(4px) translateY(-1320px) translateZ(-7321px)
-      rotateX(54deg) rotateY(-16deg) rotateZ(10deg) scaleX(-4.72) scaleY(-3.92);
+    transform: translateX(-400px) translateY(-1320px) translateZ(-7321px)
+      rotateX(60deg) rotateY(-11deg) rotateZ(10deg) scaleX(-4.72) scaleY(-3.92);
   }
   100% {
-    transform: translateX(4px) translateY(-1320px) translateZ(-7321px)
-      rotateX(54deg) rotateY(-16deg) rotateZ(370deg) scaleX(-4.72) scaleY(-3.92);
+    transform: translateX(-400px) translateY(-1320px) translateZ(-7321px)
+      rotateX(60deg) rotateY(-11deg) rotateZ(370deg) scaleX(-4.72) scaleY(-3.92);
   }
 }
 @media (--large-desktop) {
