@@ -1,4 +1,4 @@
-import AnimatedHexagonGrid from "../AnimatedHexagonGrid/AnimatedHexagonGrid";
+import Honeycombs from "../Honeycombs/Honeycombs";
 import "./Page3DBackground.css";
 
 const Page3DBackground = () => {
@@ -12,20 +12,14 @@ const Page3DBackground = () => {
       <img
         src="vectors/dorfic-ring.svg"
         alt="dorfic-ring.svg"
-        className="bg__dorfic-ring"
+        className="bg__dorfic-ring bg__ring"
       />
       <img
         src="vectors/dorfic-ring-underlay.svg"
         alt="dorfic-ring-underlay.svg"
-        className="bg__dorfic-ring-underlay"
+        className="bg__dorfic-ring-underlay bg__ring"
       />
-      <div className="bg__grid" />
-      <div className="bg-hexagon-grid">
-        <AnimatedHexagonGrid />
-        <AnimatedHexagonGrid />
-        <AnimatedHexagonGrid />
-        <AnimatedHexagonGrid />
-      </div>
+      <Honeycombs />
     </div>
   );
 };

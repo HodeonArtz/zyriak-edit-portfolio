@@ -1,0 +1,54 @@
+.honeycomb-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.honeycomb {
+  position: absolute;
+  filter: drop-shadow(0 -2.5px 0px rgb(255 255 255 / 1));
+
+  transform: translateX(var(--x)) translateY(var(--y)) translateZ(var(--z))
+    scale(var(--s));
+}
+.honeycomb-1 {
+  --x: -620px;
+  --y: -60px;
+  --z: -400px;
+  --s: 1.35;
+}
+.honeycomb-2 {
+  --x: 890px;
+  --y: 420px;
+  --z: -800px;
+  --s: 1.7;
+}
+.honeycomb-3 {
+  --x: -980px;
+  --y: 1300px;
+  --z: -1000px;
+  --s: 1.9;
+}
+.honeycomb-4 {
+  --x: 641px;
+  --y: 1830px;
+  --z: -400px;
+  --s: 1.35;
+}
+.honeycomb-5 {
+  --x: -560px;
+  --y: 1940px;
+  --z: -400px;
+  --s: 1.35;
+}
+.honeycomb-6 {
+  --x: 110px;
+  --y: 2390px;
+  --z: -600px;
+  --s: 1.5;
+}

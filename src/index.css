@@ -5,6 +5,53 @@
 :root {
   --main-content-width: 80ch;
 }
+@layer variables {
+  @property --x {
+    syntax: "<length>";
+    inherits: false;
+    initial-value: 0px;
+  }
+  @property --y {
+    syntax: "<length>";
+    inherits: false;
+    initial-value: 0px;
+  }
+  @property --z {
+    syntax: "<length>";
+    inherits: false;
+    initial-value: 0px;
+  }
+  @property --rx {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+  }
+  @property --ry {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+  }
+  @property --rz {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+  }
+  @property --s {
+    syntax: "<number>";
+    inherits: false;
+    initial-value: 1;
+  }
+  @property --sx {
+    syntax: "<number>";
+    inherits: false;
+    initial-value: 1;
+  }
+  @property --sy {
+    syntax: "<number>";
+    inherits: false;
+    initial-value: 1;
+  }
+}
 
 @layer base {
   * {

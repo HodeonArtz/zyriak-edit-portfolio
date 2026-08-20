@@ -4,6 +4,7 @@
   transform-style: preserve-3d;
   display: flex;
   justify-content: center;
+  align-items: center;
   top: -106px;
   position: fixed;
   z-index: -1;
@@ -31,7 +32,81 @@
   z-index: -1;
   transform: translateZ(-12000px) scale(11);
 }
-.bg__grid {
+
+.bg__ring {
+  min-width: 2000px;
+  max-width: 140%;
+
+  --x: -400px;
+  --y: -1300px;
+  --z: -7321px;
+  --rx: 60deg;
+  --ry: -11deg;
+  --rz: 0deg;
+  --sx: 4.62;
+  --sy: 3.82;
+  transform: translateX(var(--x)) translateY(var(--y)) translateZ(var(--z))
+    rotateX(var(--rx)) rotateY(var(--ry)) rotateZ(var(--rz)) scaleX(var(--sx))
+    scaleY(var(--sy));
+}
+.bg__dorfic-ring {
+  animation: infinite dorfic-ring-rotating 120s linear;
+}
+.bg__dorfic-ring-underlay {
+  --y: -1320px;
+  --rz: 10deg;
+  --sx: 4.72;
+  --sy: 3.92;
+  animation: infinite dorfic-underlay-ring-rotating 120s linear;
+}
+@keyframes dorfic-ring-rotating {
+  0% {
+    --rz: 0deg;
+    --sx: 4.62;
+  }
+  50% {
+    --rz: 180deg;
+    --sx: 4.02;
+  }
+  100% {
+    --rz: 360deg;
+    --sx: 4.62;
+  }
+}
+@keyframes dorfic-underlay-ring-rotating {
+  0% {
+    --rz: 10deg;
+  }
+  100% {
+    --rz: 370deg;
+  }
+}
+/* @media (--large-desktop) {
+  .bg__dorfic-wave-graphic {
+    transform: translateX(-56px) translateY(25.8px) translateZ(-7321px)
+      rotateX(67deg) rotateY(-10deg) rotateZ(0deg) scale(-4.5);
+  }
+}
+@media (--mobile) {
+  .bg__dorfic-wave-graphic {
+    transform: translateX(-1427px) translateY(969px) translateZ(-7821px)
+      rotateX(62deg) rotateY(24deg) rotateZ(-14deg) scale(10);
+  }
+} */
+/* .bg-hexagon-grid-group {
+  position: absolute;
+  top: 4em;
+  column-gap: 60ch;
+  row-gap: 26em;
+  display: grid;
+  width: fit-content;
+  justify-items: center;
+  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  overflow: visible;
+} */
+
+/* .bg__grid {
   background-image: url("vectors/grid_dorfic_for_mirror.svg");
   background-size: 1000px 1000px;
   width: 1500px;
@@ -76,62 +151,4 @@
 .bg__dorfic-wave-graphic {
   transform: translateX(-1427px) translateY(969px) translateZ(-7821px)
     rotateX(62deg) rotateY(24deg) rotateZ(-14deg) scale(5);
-}
-
-.bg__dorfic-ring {
-  min-width: 1800px;
-  max-width: 140%;
-  transform: translateX(-400px) translateY(-1300px) translateZ(-7321px)
-    rotateX(60deg) rotateY(-11deg) rotateZ(0deg) scaleX(-4.62) scaleY(-3.82);
-  animation: infinite dorfic-ring-rotating 120s linear;
-}
-.bg__dorfic-ring-underlay {
-  min-width: 1800px;
-  max-width: 140%;
-  transform: translateX(-400px) translateY(-1320px) translateZ(-7321px)
-    rotateX(60deg) rotateY(-11deg) rotateZ(10deg) scaleX(-4.72) scaleY(-3.92);
-  animation: infinite dorfic-underlay-ring-rotating 120s linear;
-}
-.bg-hexagon-grid {
-  display: grid;
-  width: fit-content;
-  justify-items: center;
-  align-items: center;
-  grid-template-columns: 1fr 1fr;
-}
-@keyframes dorfic-ring-rotating {
-  0% {
-    transform: translateX(-400px) translateY(-1300px) translateZ(-7321px)
-      rotateX(60deg) rotateY(-11deg) rotateZ(0deg) scaleX(-4.62) scaleY(-3.82);
-  }
-  50% {
-    transform: translateX(-400px) translateY(-1300px) translateZ(-7321px)
-      rotateX(60deg) rotateY(-11deg) rotateZ(180deg) scaleX(-4.02) scaleY(-3.82);
-  }
-  100% {
-    transform: translateX(-400px) translateY(-1300px) translateZ(-7321px)
-      rotateX(60deg) rotateY(-11deg) rotateZ(360deg) scaleX(-4.62) scaleY(-3.82);
-  }
-}
-@keyframes dorfic-underlay-ring-rotating {
-  0% {
-    transform: translateX(-400px) translateY(-1320px) translateZ(-7321px)
-      rotateX(60deg) rotateY(-11deg) rotateZ(10deg) scaleX(-4.72) scaleY(-3.92);
-  }
-  100% {
-    transform: translateX(-400px) translateY(-1320px) translateZ(-7321px)
-      rotateX(60deg) rotateY(-11deg) rotateZ(370deg) scaleX(-4.72) scaleY(-3.92);
-  }
-}
-@media (--large-desktop) {
-  .bg__dorfic-wave-graphic {
-    transform: translateX(-56px) translateY(25.8px) translateZ(-7321px)
-      rotateX(67deg) rotateY(-10deg) rotateZ(0deg) scale(-4.5);
-  }
-}
-@media (--mobile) {
-  .bg__dorfic-wave-graphic {
-    transform: translateX(-1427px) translateY(969px) translateZ(-7821px)
-      rotateX(62deg) rotateY(24deg) rotateZ(-14deg) scale(10);
-  }
-}
+} */
