@@ -1,3 +1,4 @@
+import Bubbles from "../Bubbles/Bubbles";
 import Honeycombs from "../Honeycombs/Honeycombs";
 import "./Page3DBackground.css";
 
@@ -20,6 +21,7 @@ const Page3DBackground = () => {
         className="bg__dorfic-ring-underlay bg__ring"
       />
       <Honeycombs />
+      <Bubbles />
     </div>
   );
 };
