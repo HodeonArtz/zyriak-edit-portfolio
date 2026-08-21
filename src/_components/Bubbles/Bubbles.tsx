@@ -6,14 +6,19 @@ gsap.registerPlugin(useGSAP);
 
 const Bubbles = () => {
   const BUBBLES_CONFIG = {
-    BUBBLES_COUNT: 12,
+    BUBBLES_COUNT: 10,
+    SCALE: {
+      MIN: 0.5,
+      MAX: 1.1,
+      SIZES_COUNT: 3,
+    },
     X: {
       MIN: 500,
-      MAX: 780,
+      MAX: 820,
     },
     Y: {
       MIN: 0,
-      MAX: 2400,
+      MAX: 1600,
     },
   };
 
@@ -45,9 +50,22 @@ const Bubbles = () => {
 
       return randomYPosition;
     }
+    function getRandomScale() {
+      console.log(
+        BUBBLES_CONFIG.SCALE.MAX -
+          BUBBLES_CONFIG.SCALE.MIN / BUBBLES_CONFIG.SCALE.SIZES_COUNT,
+      );
+      return gsap.utils.random(
+        BUBBLES_CONFIG.SCALE.MIN,
+        BUBBLES_CONFIG.SCALE.MAX,
+        (BUBBLES_CONFIG.SCALE.MAX - BUBBLES_CONFIG.SCALE.MIN) /
+          BUBBLES_CONFIG.SCALE.SIZES_COUNT,
+      );
+    }
     gsap.set(".bubble", {
       x: getRandomXPosition,
       y: getRandomYPosition,
+      scale: getRandomScale,
     });
     return () => {
       bubbleYPositions.fill(0);
@@ -57,8 +75,9 @@ const Bubbles = () => {
     <div className="bubbles-wrapper">
       {Array(BUBBLES_CONFIG.BUBBLES_COUNT)
         .fill(0)
-        .map(() => (
+        .map((_, i) => (
           <svg
+            key={`bubble-${i}`}
             width="300"
             height="300"
             viewBox="0 0 300 300"

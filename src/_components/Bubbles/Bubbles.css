@@ -8,8 +8,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  transform: translateZ(-600px) translateY(483px) scale(1.5);
 }
 
 .bubble {
   position: absolute;
+}
+svg.bubble circle,
+svg.bubble path,
+svg.bubble line {
+  vector-effect: non-scaling-stroke;
 }
