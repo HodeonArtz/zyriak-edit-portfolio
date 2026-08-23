@@ -24,6 +24,7 @@ const GlossyNavLink = ({ scrollTo, ...props }: GlossyNavLinkProps) => {
           y: scrollTo ?? 0,
           offsetY: 60,
         },
+        ease: "power4.out",
       });
     },
   );
