@@ -3,8 +3,26 @@ import Title from "../../../../_components/Title/Title";
 import "./WorksSection.css";
 import editsConfig from "../../../../../public/edits.json";
 import WorkVideoLink from "./_components/WorkVideoLink/WorkVideoLink";
+import { gsap } from "gsap/gsap-core";
+import { useGSAP } from "@gsap/react";
+import { ScrollToPlugin } from "gsap/all";
+
+gsap.registerPlugin(useGSAP, ScrollToPlugin);
 
 const WorksSection = () => {
+  const { contextSafe } = useGSAP();
+
+  const handleClickToSocialsSection = contextSafe(() => {
+    gsap.to(window, {
+      duration: 1,
+      scrollTo: {
+        y: "#socials-section",
+        offsetY: 60,
+      },
+      ease: "power4.out",
+    });
+  });
+
   return (
     <div className="works-section">
       <Title as="h2">My works</Title>
@@ -20,7 +38,9 @@ const WorksSection = () => {
       </article>
 
       <div className="works__goto-socials-button-container">
-        <Button>Go watch my other works!</Button>
+        <Button onClick={handleClickToSocialsSection}>
+          Go watch my other works!
+        </Button>
       </div>
     </div>
   );
