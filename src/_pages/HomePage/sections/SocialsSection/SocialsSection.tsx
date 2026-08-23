@@ -8,12 +8,20 @@ const SocialsSection = () => {
       <Title as="h2">My socials</Title>
       <div className="socials__links">
         <div className="socials__socials">
-          <Button color="yt">YouTube</Button>
-          <Button color="ig">Instagram</Button>
-          <Button color="tiktok">TikTok</Button>
+          <Button className="socials__button-link" color="yt">
+            YouTube
+          </Button>
+          <Button className="socials__button-link" color="ig">
+            Instagram
+          </Button>
+          <Button className="socials__button-link" color="tiktok">
+            TikTok
+          </Button>
         </div>
         <div className="socials__contacts">
-          <Button color="blue">davidpetersen.0318@gmail.com</Button>
+          <Button className="socials__button-link" color="blue">
+            davidpetersen.0318@gmail.com
+          </Button>
         </div>
       </div>
     </div>

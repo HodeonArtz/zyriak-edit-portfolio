@@ -9,18 +9,23 @@ import { ScrollToPlugin } from "gsap/all";
 
 gsap.registerPlugin(useGSAP, ScrollToPlugin);
 
-const WorksSection = () => {
+interface WorksSectionProps {
+  onClickToSocialsSection: () => void;
+}
+
+const WorksSection = ({ onClickToSocialsSection }: WorksSectionProps) => {
   const { contextSafe } = useGSAP();
 
   const handleClickToSocialsSection = contextSafe(() => {
-    gsap.to(window, {
+    const tl = gsap.timeline();
+    tl.to(window, {
       duration: 1,
       scrollTo: {
         y: "#socials-section",
         offsetY: 60,
       },
       ease: "power4.out",
-    });
+    }).call(onClickToSocialsSection, [], "-=0.7");
   });
 
   return (
