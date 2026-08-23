@@ -6,16 +6,16 @@ import WorksSection from "./sections/WorksSection/WorksSection";
 const HomePage = () => {
   return (
     <>
-      <GlossyContainer id="profile">
+      <GlossyContainer id="profile-section">
         <ProfileSection />
       </GlossyContainer>
-      <GlossyContainer id="works">
+      <GlossyContainer id="works-section">
         <WorksSection />
       </GlossyContainer>
-      <GlossyContainer id="socials">
+      <GlossyContainer id="socials-section">
         <SocialsSection />
       </GlossyContainer>
-      <GlossyContainer id="credits">
+      <GlossyContainer id="credits-section">
         <div>
           <div className="credits-section">
             <p>

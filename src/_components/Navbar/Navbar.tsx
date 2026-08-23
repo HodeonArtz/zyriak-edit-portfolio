@@ -54,9 +54,13 @@ const Navbar = () => {
         <nav className="navbar">
           <GlossyNavLink to="/">Home</GlossyNavLink>
           <VerticalSeparator />
-          <GlossyNavLink to="/#works">Works</GlossyNavLink>
+          <GlossyNavLink scrollTo="#works-section" to="/#works-section">
+            Works
+          </GlossyNavLink>
           <VerticalSeparator />
-          <GlossyNavLink to="/#socials">Socials</GlossyNavLink>
+          <GlossyNavLink scrollTo="#socials-section" to="/#socials-section">
+            Socials
+          </GlossyNavLink>
         </nav>
       </div>
       <div className="navbar__spacebar">&nbsp;</div>
