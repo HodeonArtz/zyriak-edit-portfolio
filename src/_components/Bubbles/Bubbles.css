@@ -13,6 +13,8 @@
 
 .bubble {
   position: absolute;
+  backdrop-filter: blur(4px);
+  border-radius: 1e6px;
 }
 svg.bubble circle,
 svg.bubble path,
