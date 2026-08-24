@@ -8,7 +8,8 @@ const BrandLogotype = () => {
       <img
         className="brand-logotype__decoration"
         src="vectors/BackgroundDecoration.svg"
-        alt=""
+        fetchPriority="high"
+        alt="Logo-decoration"
       />
       <Title className="brand-logotype__text" as="h1">
         Zyriak

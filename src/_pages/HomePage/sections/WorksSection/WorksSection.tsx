@@ -25,7 +25,7 @@ const WorksSection = ({ onClickToSocialsSection }: WorksSectionProps) => {
         offsetY: 60,
       },
       ease: "power4.out",
-    }).call(onClickToSocialsSection, [], "-=0.7");
+    }).call(onClickToSocialsSection, [], "-=0.6");
   });
 
   return (
