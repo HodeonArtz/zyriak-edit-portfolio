@@ -8,6 +8,8 @@ import { Flip } from "gsap/Flip";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Title from "../Title/Title";
+import IconButton from "../Button/IconButton/IconButton";
+import { IconMenu } from "@tabler/icons-react";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, Flip);
 
@@ -50,7 +52,11 @@ const Navbar = () => {
 
   return (
     <div className="navbar__wrapper navbar--white">
-      <div className="navbar__interaction-section"></div>
+      <div className="navbar__interaction-section">
+        <IconButton>
+          <IconMenu />
+        </IconButton>
+      </div>
       <div className="navbar__content">
         <Title className="navbar__header" as="h2">
           Menu
