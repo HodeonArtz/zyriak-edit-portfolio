@@ -78,15 +78,19 @@
       2
   );
 }
-.navbar__header {
+.navbar__header,
+.navbar__interaction-section {
   display: none;
 }
 
 @media (--not-desktop) {
+  .navbar__interaction-section,
+  .navbar__header {
+    display: initial;
+  }
   .navbar__header {
     font-size: 3em;
     margin: 0 0.875em;
-    display: initial;
   }
   .navbar__spacebar,
   .navbar__vertical-separator {

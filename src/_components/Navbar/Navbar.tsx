@@ -50,6 +50,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar__wrapper navbar--white">
+      <div className="navbar__interaction-section"></div>
       <div className="navbar__content">
         <Title className="navbar__header" as="h2">
           Menu
