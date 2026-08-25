@@ -51,10 +51,6 @@ const Bubbles = () => {
       return randomYPosition;
     }
     function getRandomScale() {
-      console.log(
-        BUBBLES_CONFIG.SCALE.MAX -
-          BUBBLES_CONFIG.SCALE.MIN / BUBBLES_CONFIG.SCALE.SIZES_COUNT,
-      );
       return gsap.utils.random(
         BUBBLES_CONFIG.SCALE.MIN,
         BUBBLES_CONFIG.SCALE.MAX,

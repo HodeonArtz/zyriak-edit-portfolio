@@ -88,10 +88,7 @@
   .navbar__header {
     display: initial;
   }
-  .navbar__header {
-    font-size: 3em;
-    margin: 0 0.875em;
-  }
+
   .navbar__spacebar,
   .navbar__vertical-separator {
     display: none;
@@ -116,7 +113,44 @@
     padding-top: 0.75em;
     padding-bottom: 0.75em;
   }
+
+  .navbar__wrapper {
+    position: relative;
+  }
+  .navbar__content {
+    align-items: center;
+    top: 0;
+    padding-top: 3.75em;
+    padding-bottom: 12em;
+    position: fixed;
+    gap: 0.625em;
+    background: linear-gradient(
+      to bottom,
+      rgba(243, 217, 17, 1) 0%,
+      rgba(233, 154, 33, 0.9) 69%,
+      rgba(222, 99, 50, 0.8) 100%
+    );
+  }
+
+  .navbar__header {
+    box-sizing: border-box;
+    max-width: var(--main-content-width);
+    width: 100%;
+    padding: 0 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar__heading {
+    box-sizing: border-box;
+    padding: 0 24px;
+    font-size: 3em;
+    width: 100%;
+    max-width: var(--main-content-width);
+  }
   .navbar {
+    width: 100%;
     box-shadow: none;
     padding: 1.125em 0;
     border-radius: 0;
@@ -125,11 +159,22 @@
 
   .navbar > * {
     font-size: 1.25em;
-    padding-left: 3.65714286em;
-    padding-right: 3.65714286em;
+
     background: linear-gradient(to bottom, #fff 0%, #dbdbdb 84%, #d7d7d7 100%);
     background-color: #d7d7d7;
     position: relative;
+  }
+  .navbar__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar__link > * {
+    box-sizing: border-box;
+    padding: 0 38px;
+    max-width: 69ch;
+    width: 100%;
+    display: block;
   }
   .navbar > *::before {
     content: "";
@@ -142,13 +187,25 @@
     z-index: -1;
     background-color: rgba(255, 255, 255, 0.2);
   }
-  .navbar__content {
-    gap: 0.625em;
-  }
+
   .navbar__interaction-section {
+    position: relative;
     display: flex;
     justify-content: end;
     align-items: center;
-    padding: 0 10px;
+    margin: 0 10px;
   }
+  .navbar__menu-button {
+    position: relative;
+  }
+  .navbar__menu-mask-shape {
+    user-select: none;
+    top: 50%;
+    right: 22px;
+    position: absolute;
+    transform: translate(50%, -50%) scale(0.1);
+  }
+  /* .navbar__menu-mask-shape {
+    transform: translate(15%, -116%) scale(2.3);
+  } */
 }

@@ -9,7 +9,11 @@ interface GlossyNavLinkProps extends NavLinkProps {
   scrollTo?: string;
 }
 
-const GlossyNavLink = ({ scrollTo, ...props }: GlossyNavLinkProps) => {
+const GlossyNavLink = ({
+  scrollTo,
+  className,
+  ...props
+}: GlossyNavLinkProps) => {
   const { contextSafe } = useGSAP();
 
   const handleClick = contextSafe(
@@ -30,7 +34,7 @@ const GlossyNavLink = ({ scrollTo, ...props }: GlossyNavLinkProps) => {
   );
   return (
     <NavLink
-      className="glossy-navlink"
+      className={`glossy-navlink ${className}`}
       onClick={handleClick}
       {...props}
       data-text={props.children}
