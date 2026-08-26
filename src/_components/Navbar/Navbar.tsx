@@ -10,25 +10,29 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Title from "../Title/Title";
 import IconButton from "../Button/IconButton/IconButton";
 import { IconMenu } from "@tabler/icons-react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, Flip);
 
 const Navbar = () => {
-  const [showMenu, setShowMenu] = useState<boolean>(false),
-    [isDesktop, setIsDesktop] = useState<boolean>(false);
+  const openMenuTimelineRef = useRef<gsap.core.Timeline>(null);
+  const [isDesktop, setIsDesktop] = useState<boolean>(false);
+
   useGSAP(() => {
     const matchMedia = gsap.matchMedia();
 
     matchMedia.add("(max-width: 1024px)", () => {
       setIsDesktop(false);
+
       gsap.set(".navbar", {
         style: "",
       });
     });
     matchMedia.add("(min-width: 1024px)", () => {
-      setShowMenu(false);
       setIsDesktop(true);
+      gsap.set(".navbar__content", {
+        display: "flex",
+      });
       gsap.set(".navbar__wrapper", {
         paddingTop: "2.0625em",
         paddingBottom: "2.0625em",
@@ -42,7 +46,9 @@ const Navbar = () => {
           start: "-=100 top",
           end: "top top",
           scrub: 0.5,
+          invalidateOnRefresh: true,
         },
+
         ease: "power2.inOut",
         duration: 0.2,
         width: "110%",
@@ -60,55 +66,79 @@ const Navbar = () => {
         paddingBottom: "4.125em",
       });
     });
-  }, [showMenu, isDesktop]);
 
-  function handleOnToggleMenu() {
-    setShowMenu((isMenuShown) => !isMenuShown);
-  }
-  function handleCloseMenu() {
-    setShowMenu(false);
-  }
+    openMenuTimelineRef.current = gsap
+      .timeline({
+        paused: true,
+        reversed: true,
+      })
+      .to(".navbar__content", {
+        maskPosition: "50% 80%",
+        duration: 0.75,
+        ease: "power2.inOut",
+        onStart: () =>
+          gsap.set(".navbar__content", {
+            display: "flex",
+          }),
+        onReverseComplete: () =>
+          gsap.set(".navbar__content", {
+            display: "none",
+          }),
+      });
+
+    return () => {
+      matchMedia.revert();
+      openMenuTimelineRef.current = null;
+    };
+  });
+
+  const handleOnToggleMenu = () => {
+    const timeline = openMenuTimelineRef.current;
+
+    if (!timeline) return;
+
+    if (timeline.reversed()) {
+      console.log("play");
+      timeline.play();
+    } else {
+      console.log("reverse");
+      timeline.reverse();
+    }
+  };
   return (
     <div className="navbar__wrapper navbar--white">
-      {(isDesktop || showMenu) && (
-        <div className="navbar__content">
-          <div className="navbar__header">
-            <Title className="navbar__heading" as="h2">
-              Menu
-            </Title>
-          </div>
-          <nav className="navbar">
-            <GlossyNavLink className="navbar__link" to="/">
-              <span>Home</span>
-            </GlossyNavLink>
-            <VerticalSeparator className="navbar__vertical-separator" />
-            <GlossyNavLink
-              className="navbar__link"
-              scrollTo="#works-section"
-              to="/#works-section"
-            >
-              <span>Works</span>
-            </GlossyNavLink>
-            <VerticalSeparator className="navbar__vertical-separator" />
-            <GlossyNavLink
-              className="navbar__link"
-              scrollTo="#socials-section"
-              to="/#socials-section"
-            >
-              <span>Socials</span>
-            </GlossyNavLink>
-          </nav>
+      <div className="navbar__content">
+        <div className="navbar__header">
+          <Title className="navbar__heading" as="h2">
+            Menu
+          </Title>
         </div>
-      )}
+        <nav className="navbar">
+          <GlossyNavLink className="navbar__link" data-text={"Home"} to="/">
+            {isDesktop ? "Home" : <span>Home</span>}
+          </GlossyNavLink>
+          <VerticalSeparator className="navbar__vertical-separator" />
+          <GlossyNavLink
+            className="navbar__link"
+            data-text={"Works"}
+            scrollTo="#works-section"
+            to="/#works-section"
+          >
+            {isDesktop ? "Works" : <span>Works</span>}
+          </GlossyNavLink>
+          <VerticalSeparator className="navbar__vertical-separator" />
+          <GlossyNavLink
+            className="navbar__link"
+            data-text={"Socials"}
+            scrollTo="#socials-section"
+            to="/#socials-section"
+          >
+            {isDesktop ? "Socials" : <span>Socials</span>}
+          </GlossyNavLink>
+        </nav>
+      </div>
+
       <div className="navbar__interaction-section">
-        <svg
-          height="1000"
-          width="1000"
-          xmlns="http://www.w3.org/2000/svg"
-          className="navbar__menu-mask-shape"
-        >
-          <circle r="500" cx="500" cy="500" fill="black" />
-        </svg>
         <IconButton
           className="navbar__menu-button"
           onClick={handleOnToggleMenu}
