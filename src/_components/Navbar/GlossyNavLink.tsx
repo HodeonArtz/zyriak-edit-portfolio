@@ -34,9 +34,9 @@ const GlossyNavLink = ({
   );
   return (
     <NavLink
+      {...props}
       className={`glossy-navlink ${className}`}
       onClick={handleClick}
-      {...props}
     />
   );
 };

@@ -127,7 +127,7 @@
     align-items: center;
     top: 0;
     padding-top: 3.75em;
-    padding-bottom: 12em;
+    padding-bottom: 25em;
     position: fixed;
     gap: 0.625em;
     background: linear-gradient(
@@ -137,7 +137,7 @@
       rgba(222, 99, 50, 0.8) 100%
     );
     mask: url("vectors/simple-circle.svg");
-    mask-position: -50% 150%;
+    mask-position: -60% 162%;
     mask-size: 200%;
     /*         mask-position: 50% 80%;
          */

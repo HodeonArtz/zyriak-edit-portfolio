@@ -9,14 +9,15 @@ import { Flip } from "gsap/Flip";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Title from "../Title/Title";
 import IconButton from "../Button/IconButton/IconButton";
-import { IconMenu } from "@tabler/icons-react";
+import { IconMenu, IconX } from "@tabler/icons-react";
 import { useRef, useState } from "react";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, Flip);
 
 const Navbar = () => {
   const openMenuTimelineRef = useRef<gsap.core.Timeline>(null);
-  const [isDesktop, setIsDesktop] = useState<boolean>(false);
+  const [isDesktop, setIsDesktop] = useState<boolean>(false),
+    [isMenuOpened, setIsMenuOpened] = useState<boolean>(false);
 
   useGSAP(() => {
     const matchMedia = gsap.matchMedia();
@@ -73,7 +74,7 @@ const Navbar = () => {
         reversed: true,
       })
       .to(".navbar__content", {
-        maskPosition: "50% 80%",
+        maskPosition: "60% 68%",
         duration: 0.75,
         ease: "power2.inOut",
         onStart: () =>
@@ -96,14 +97,23 @@ const Navbar = () => {
     const timeline = openMenuTimelineRef.current;
 
     if (!timeline) return;
-
+    setIsMenuOpened(openMenuTimelineRef.current?.reversed() || false);
     if (timeline.reversed()) {
-      console.log("play");
+      console.log("open");
       timeline.play();
     } else {
-      console.log("reverse");
+      console.log("close");
+
       timeline.reverse();
     }
+  };
+  const handleCloseMenu = () => {
+    if (isDesktop) return;
+
+    const timeline = openMenuTimelineRef.current;
+    if (!timeline) return;
+    if (!isMenuOpened) return;
+    timeline.reverse();
   };
   return (
     <div className="navbar__wrapper navbar--white">
@@ -114,11 +124,17 @@ const Navbar = () => {
           </Title>
         </div>
         <nav className="navbar">
-          <GlossyNavLink className="navbar__link" data-text={"Home"} to="/">
+          <GlossyNavLink
+            onClick={handleCloseMenu}
+            className="navbar__link"
+            data-text={"Home"}
+            to="/"
+          >
             {isDesktop ? "Home" : <span>Home</span>}
           </GlossyNavLink>
           <VerticalSeparator className="navbar__vertical-separator" />
           <GlossyNavLink
+            onClick={handleCloseMenu}
             className="navbar__link"
             data-text={"Works"}
             scrollTo="#works-section"
@@ -128,6 +144,7 @@ const Navbar = () => {
           </GlossyNavLink>
           <VerticalSeparator className="navbar__vertical-separator" />
           <GlossyNavLink
+            onClick={handleCloseMenu}
             className="navbar__link"
             data-text={"Socials"}
             scrollTo="#socials-section"
@@ -143,7 +160,7 @@ const Navbar = () => {
           className="navbar__menu-button"
           onClick={handleOnToggleMenu}
         >
-          <IconMenu />
+          {isMenuOpened ? <IconX /> : <IconMenu />}
         </IconButton>
       </div>
       <div className="navbar__spacebar">&nbsp;</div>
