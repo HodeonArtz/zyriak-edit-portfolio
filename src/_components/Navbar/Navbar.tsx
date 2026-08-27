@@ -74,8 +74,8 @@ const Navbar = () => {
         reversed: true,
       })
       .to(".navbar__content", {
-        maskPosition: "60% 68%",
-        duration: 0.75,
+        maskPosition: "60% 38%",
+        duration: 0.8,
         ease: "power2.inOut",
         onStart: () =>
           gsap.set(".navbar__content", {
@@ -99,11 +99,8 @@ const Navbar = () => {
     if (!timeline) return;
     setIsMenuOpened(openMenuTimelineRef.current?.reversed() || false);
     if (timeline.reversed()) {
-      console.log("open");
       timeline.play();
     } else {
-      console.log("close");
-
       timeline.reverse();
     }
   };
@@ -113,6 +110,7 @@ const Navbar = () => {
     const timeline = openMenuTimelineRef.current;
     if (!timeline) return;
     if (!isMenuOpened) return;
+    setIsMenuOpened(timeline.reversed() || false);
     timeline.reverse();
   };
   return (
