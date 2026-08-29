@@ -1,5 +1,7 @@
 @import "../../_styles/utils.css";
+
 .glossy-button {
+  text-decoration: none;
   position: relative;
   color: white;
   font-size: 1em;

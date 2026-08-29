@@ -118,7 +118,7 @@
   }
 
   .navbar__wrapper {
-    position: relative;
+    position: sticky;
   }
   #navbar-menu-mask {
     z-index: -1;

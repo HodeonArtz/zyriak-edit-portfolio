@@ -85,6 +85,10 @@
     border: none;
     background-color: transparent;
   }
+  html,
+  body {
+    scroll-behavior: auto;
+  }
 }
 
 @layer typography {

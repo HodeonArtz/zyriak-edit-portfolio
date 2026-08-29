@@ -4,9 +4,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+    position: fixed;
     width: 100%;
+    height: 100%;
     perspective: 1200px;
+    overflow-x: hidden;
   }
   .container {
     display: flex;
@@ -18,11 +20,12 @@
     padding-left: 0.625rem;
     padding-right: 0.625rem;
     transform-style: preserve-3d;
+    position: relative;
   }
   .container > * {
     width: 100%;
   }
   .space {
-    height: 50em;
+    height: 25em;
   }
 }

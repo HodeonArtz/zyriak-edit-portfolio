@@ -28,6 +28,9 @@ const Navbar = () => {
       gsap.set(".navbar", {
         style: "",
       });
+      gsap.set(".navbar__content", {
+        display: "none",
+      });
     });
     matchMedia.add("(min-width: 1024px)", () => {
       setIsDesktop(true);
