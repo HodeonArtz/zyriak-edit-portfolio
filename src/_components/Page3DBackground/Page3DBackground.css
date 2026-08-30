@@ -1,4 +1,5 @@
 @import url("../../_styles/breakpoints.css");
+
 .bg-wrapper {
   user-select: none;
   transform-style: preserve-3d;
@@ -79,6 +80,12 @@
   }
   100% {
     --rz: 370deg;
+  }
+}
+
+@media (--mobile) {
+  .bg-wrapper {
+    display: none;
   }
 }
 /* @media (--large-desktop) {
