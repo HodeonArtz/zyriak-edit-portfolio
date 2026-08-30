@@ -65,6 +65,7 @@ const GraphicDecoration1 = () => {
       data-name="GraphicDecoration1"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 588.23 588.23"
+      aria-hidden
     >
       <g id="GraphicDecoration1-layer" data-name="Capa 1">
         <circle className="center-circle" cx="294" cy="294" r="35.71" />

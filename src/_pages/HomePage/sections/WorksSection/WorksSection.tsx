@@ -31,7 +31,10 @@ const WorksSection = ({ onClickToSocialsSection }: WorksSectionProps) => {
   return (
     <div className="works-section">
       <Title as="h2">My works</Title>
-      <article className="works__edits">
+      <article
+        className="works__edits"
+        aria-label="Variety of Zyriak's works (mainly edits)"
+      >
         {editsConfig.edits.map(({ id, alt, img: src, url }) => (
           <WorkVideoLink
             href={url}
@@ -43,7 +46,11 @@ const WorksSection = ({ onClickToSocialsSection }: WorksSectionProps) => {
       </article>
 
       <div className="works__goto-socials-button-container">
-        <Button onClick={handleClickToSocialsSection}>
+        <Button
+          onClick={handleClickToSocialsSection}
+          aria-label="Navigate to 'My Socials' section"
+          aria-description="Button to navigate to Zyriak's socials"
+        >
           Go watch my other works!
         </Button>
       </div>

@@ -25,7 +25,7 @@ const ResponsiveLayout = () => {
   return (
     <div className="wrapper">
       <Navbar />
-      <main className="container">
+      <main aria-label="Main content of homepage" className="container">
         <Page3DBackground />
         <Outlet />
       </main>

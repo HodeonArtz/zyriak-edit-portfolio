@@ -41,6 +41,7 @@ const Button = (props: ButtonProps) => {
           src="vectors/glass_overlay_button.svg"
           alt="Button glass overlay"
           className="glossy-button__gloss"
+          aria-hidden
         />
         <span className="glossy-button__content">{children}</span>
       </a>
@@ -55,6 +56,7 @@ const Button = (props: ButtonProps) => {
         src="vectors/glass_overlay_button.svg"
         alt="Button glass overlay"
         className="glossy-button__gloss"
+        aria-hidden
       />
       <span className="glossy-button__content">{children}</span>
     </button>

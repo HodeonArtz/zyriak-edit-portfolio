@@ -18,9 +18,9 @@ const ProfileSection = () => {
         glossy
       ></Img>
 
-      <article className="profile__content">
+      <article className="profile__content" aria-label="About Zyriak">
         <BrandLogotype />
-        <p className="profile__description">
+        <p className="profile__description" aria-label="Zyriak's description">
           <i>Just vibing...</i>
         </p>
       </article>

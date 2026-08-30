@@ -15,6 +15,7 @@ const SocialsSection = () => {
             as="anchor"
             href={socials.urls.youtube}
             target="_blank"
+            aria-label="Link to Zyriak's YouTube channel"
           >
             YouTube
           </Button>
@@ -24,6 +25,7 @@ const SocialsSection = () => {
             as="anchor"
             href={socials.urls.instagram}
             target="_blank"
+            aria-label="Link to Zyriak's Instagram profile"
           >
             Instagram
           </Button>
@@ -33,6 +35,7 @@ const SocialsSection = () => {
             as="anchor"
             href={socials.urls.tiktok}
             target="_blank"
+            aria-label="Link to Zyriak's TikTok page"
           >
             TikTok
           </Button>
@@ -44,6 +47,7 @@ const SocialsSection = () => {
             as="anchor"
             href={`mailto:${socials.contact.email}`}
             target="_blank"
+            aria-label="Link to contact Zyriak via e-mail"
           >
             davidpetersen.0318@gmail.com
           </Button>

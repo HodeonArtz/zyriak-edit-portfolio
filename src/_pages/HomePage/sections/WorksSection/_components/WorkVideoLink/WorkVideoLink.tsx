@@ -16,6 +16,7 @@ const WorkVideoLink = ({ href: link, ...imgProps }: WorkVideoLinkProps) => {
         viewBox="0 0 122 122"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        aria-hidden
       >
         <g clipPath="url(#clip0_673_324)">
           <g filter="url(#filter0_dii_673_324)">

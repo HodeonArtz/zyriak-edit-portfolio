@@ -10,6 +10,7 @@ const BrandLogotype = () => {
         src="vectors/BackgroundDecoration.svg"
         fetchPriority="high"
         alt="Logo-decoration"
+        aria-hidden
       />
       <Title className="brand-logotype__text" as="h1">
         Zyriak

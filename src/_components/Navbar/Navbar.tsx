@@ -159,9 +159,11 @@ const Navbar = () => {
       <div className="navbar__interaction-section">
         <IconButton
           className="navbar__menu-button"
+          aria-label="Navigation menu button"
+          title="Open navigation menu"
           onClick={handleOnToggleMenu}
         >
-          {isMenuOpened ? <IconX /> : <IconMenu />}
+          {isMenuOpened ? <IconX aria-hidden /> : <IconMenu aria-hidden />}
         </IconButton>
       </div>
       <div className="navbar__spacebar">&nbsp;</div>

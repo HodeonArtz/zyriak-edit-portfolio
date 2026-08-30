@@ -80,6 +80,7 @@ const Bubbles = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className="bubble"
+            aria-hidden
           >
             <path
               d="M150 1C232.29 1 299 67.7096 299 150C299 232.29 232.29 299 150 299C67.7096 299 1 232.29 1 150C1 67.7096 67.7096 1 150 1Z"

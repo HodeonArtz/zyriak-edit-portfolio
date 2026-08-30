@@ -22,6 +22,7 @@ const Img = ({ glossy, className, children, ...imgProps }: ImgProps) => {
         src="vectors/glass_overlay.svg"
         className="glossy-image__gloss"
         alt="image-fa-gloss-overlay"
+        aria-hidden
       />
     </div>
   );
