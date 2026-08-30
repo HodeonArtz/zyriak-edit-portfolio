@@ -45,8 +45,8 @@
   .profile__whitespace-decoration {
     display: flex;
     justify-content: center;
-
-    width: 100%;
+    transform: translate(-20%, -3%);
+    width: 170%;
     left: 0%;
     top: 0;
   }
