@@ -5,7 +5,7 @@ interface VerticalSeparatorProps {
 }
 
 const VerticalSeparator = ({ className }: VerticalSeparatorProps) => {
-  return <hr className={`vertical-hr ${className}`} />;
+  return <hr className={`vertical-hr ${className ?? ""}`} />;
 };
 
 export default VerticalSeparator;

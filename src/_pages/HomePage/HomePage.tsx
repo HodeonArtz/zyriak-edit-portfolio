@@ -5,6 +5,7 @@ import WorksSection from "./sections/WorksSection/WorksSection";
 import { gsap } from "gsap/gsap-core";
 import { useGSAP } from "@gsap/react";
 import { ScrollToPlugin } from "gsap/all";
+import CreditsSection from "./sections/CreditsSection/CreditsSection";
 
 gsap.registerPlugin(useGSAP, ScrollToPlugin);
 
@@ -39,13 +40,7 @@ const HomePage = () => {
         <SocialsSection />
       </GlossyContainer>
       <GlossyContainer id="credits-section">
-        <div>
-          <div className="credits-section">
-            <p>
-              Website designed and built by: <img alt="hdn logo" />
-            </p>
-          </div>
-        </div>
+        <CreditsSection />
       </GlossyContainer>
       <div className="space"> </div>
     </>

@@ -14,7 +14,7 @@ const IconButton = ({
   return (
     <button
       {...props}
-      className={`glossy-button glossy-action-button ${className}`}
+      className={`glossy-button glossy-action-button ${className ?? ""}`}
     >
       <span className="glossy-button__content">{children}</span>
     </button>

@@ -1,0 +1,26 @@
+@import url("../../../../_styles/utils.css");
+.credits-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.credits__copyright-section {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.credits__brand-logo {
+  font-family: "Otomo W00 Round";
+
+  font-size: 1.5em;
+}
+.credits__producer-section {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.credits__producer-logo {
+  aspect-ratio: 1 / 1;
+  width: 2.5em;
+  @mixin text-shadow;
+}

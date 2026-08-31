@@ -12,7 +12,7 @@ export interface ImgProps extends React.DetailedHTMLProps<
 const Img = ({ glossy, className, children, ...imgProps }: ImgProps) => {
   if (!glossy) return <img {...imgProps} className={className} />;
   return (
-    <div className={`glossy-image ${className}`}>
+    <div className={`glossy-image ${className ?? ""}`}>
       {children ? (
         children
       ) : (

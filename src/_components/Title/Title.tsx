@@ -12,7 +12,7 @@ const Title = ({
   ...props
 }: TitleProps) => {
   return (
-    <Tag {...props} className={`title ${className}`} data-text={children}>
+    <Tag {...props} className={`title ${className ?? ""}`} data-text={children}>
       {children}
     </Tag>
   );
