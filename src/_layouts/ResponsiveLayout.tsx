@@ -6,10 +6,13 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import Page3DBackground from "../_components/Page3DBackground/Page3DBackground";
+import { useState } from "react";
+import { NavbarContext } from "../_components/Navbar/NavbarContext";
 
 gsap.registerPlugin(useGSAP, ScrollSmoother);
 
 const ResponsiveLayout = () => {
+  const [isNavbarDisplayed, setNavbarDisplay] = useState<boolean>(true);
   useGSAP(() => {
     const smoother = ScrollSmoother.create({
       wrapper: ".wrapper",
@@ -23,13 +26,15 @@ const ResponsiveLayout = () => {
     };
   }, []);
   return (
-    <div className="wrapper">
-      <Navbar />
-      <main aria-label="Main content of homepage" className="container">
-        <Page3DBackground />
-        <Outlet />
-      </main>
-    </div>
+    <NavbarContext.Provider value={{ isNavbarDisplayed, setNavbarDisplay }}>
+      <div className="wrapper">
+        <Navbar />
+        <main aria-label="Main content of homepage" className="container">
+          <Page3DBackground />
+          <Outlet />
+        </main>
+      </div>
+    </NavbarContext.Provider>
   );
 };
 

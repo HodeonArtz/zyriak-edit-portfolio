@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router";
 import HomePage from "./_pages/HomePage/HomePage";
 import ResponsiveLayout from "./_layouts/ResponsiveLayout";
 import "./index.css";
+import NotFound from "./_pages/NotFound/NotFound";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -11,6 +12,7 @@ createRoot(document.getElementById("root")!).render(
       <Routes>
         <Route element={<ResponsiveLayout />}>
           <Route index element={<HomePage />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>

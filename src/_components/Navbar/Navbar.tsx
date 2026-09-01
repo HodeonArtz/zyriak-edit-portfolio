@@ -10,11 +10,14 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Title from "../Title/Title";
 import IconButton from "../Button/IconButton/IconButton";
 import { IconMenu, IconX } from "@tabler/icons-react";
-import { useRef, useState } from "react";
+import { useContext, useRef, useState } from "react";
+import { NavbarContext } from "./NavbarContext";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, Flip);
 
 const Navbar = () => {
+  const { isNavbarDisplayed } = useContext(NavbarContext);
+
   const openMenuTimelineRef = useRef<gsap.core.Timeline>(null);
   const [isDesktop, setIsDesktop] = useState<boolean>(false),
     [isMenuOpened, setIsMenuOpened] = useState<boolean>(false);
@@ -116,6 +119,8 @@ const Navbar = () => {
     setIsMenuOpened(timeline.reversed() || false);
     timeline.reverse();
   };
+  if (!isNavbarDisplayed) return;
+
   return (
     <div className="navbar__wrapper navbar--white">
       <div className="navbar__content">

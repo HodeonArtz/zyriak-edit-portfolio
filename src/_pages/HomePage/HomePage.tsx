@@ -6,6 +6,7 @@ import { gsap } from "gsap/gsap-core";
 import { useGSAP } from "@gsap/react";
 import { ScrollToPlugin } from "gsap/all";
 import CreditsSection from "./sections/CreditsSection/CreditsSection";
+import useNavbarContext from "../../_components/Navbar/_hooks/useNavbarContext";
 
 gsap.registerPlugin(useGSAP, ScrollToPlugin);
 
@@ -28,6 +29,8 @@ const HomePage = () => {
       },
     });
   });
+
+  useNavbarContext(true);
   return (
     <>
       <GlossyContainer id="profile-section">
