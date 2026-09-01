@@ -14,6 +14,8 @@
   width: fit-content;
   padding: 20px 26px;
   filter: drop-shadow(0 2.5px 1.5px rgb(0 0 0 / 0.15));
+  text-shadow: none;
+
   background: linear-gradient(187deg, #f6d13a, #de6b42);
   background-clip: text;
   -webkit-background-clip: text;

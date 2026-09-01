@@ -1,0 +1,33 @@
+.not-found__layout {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+.not-found__section,
+.not-found__heading,
+.not-found__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.not-found__section {
+  gap: 1.75rem;
+}
+
+.not-found__heading,
+.not-found__description {
+  gap: 0.625em;
+}
+
+.not-found__title {
+  text-box-edge: cap alphabetic;
+  text-box-trim: trim-both;
+  font-size: 6em;
+  margin: 0.75rem 0;
+}
+.not-found__subtitle {
+  font-size: 1.5em;
+}
