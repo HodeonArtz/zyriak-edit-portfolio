@@ -1,11 +1,11 @@
 import { useContext, useEffect } from "react";
 import { NavbarContext } from "../NavbarContext";
 
-const useNavbarContext = (initialNavbarDisplayStatus: boolean) => {
+const useNavbarContext = (displayNavbar: boolean) => {
   const { isNavbarDisplayed, setNavbarDisplay } = useContext(NavbarContext);
   useEffect(() => {
-    setNavbarDisplay(initialNavbarDisplayStatus);
-  }, [setNavbarDisplay, initialNavbarDisplayStatus]);
+    setNavbarDisplay(displayNavbar);
+  }, [setNavbarDisplay, displayNavbar]);
   return { isNavbarDisplayed, setNavbarDisplay };
 };
 export default useNavbarContext;
