@@ -192,6 +192,7 @@
     max-width: 69ch;
     width: 100%;
     display: block;
+    filter: none;
   }
   .navbar > *::before {
     content: "";
