@@ -13,6 +13,7 @@ createRoot(document.getElementById("root")!).render(
         <Route element={<ResponsiveLayout />}>
           <Route index element={<HomePage />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/404" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
