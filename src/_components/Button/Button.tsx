@@ -38,7 +38,7 @@ const Button = (props: ButtonProps) => {
     return (
       <a {...anchorProps} className={classes} href={href} target={target}>
         <img
-          src="vectors/glass_overlay_button.svg"
+          src="/vectors/glass_overlay_button.svg"
           alt="Button glass overlay"
           className="glossy-button__gloss"
           aria-hidden
@@ -53,7 +53,7 @@ const Button = (props: ButtonProps) => {
   return (
     <button {...buttonProps} type={type ?? "button"} className={classes}>
       <img
-        src="vectors/glass_overlay_button.svg"
+        src="/vectors/glass_overlay_button.svg"
         alt="Button glass overlay"
         className="glossy-button__gloss"
         aria-hidden

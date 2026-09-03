@@ -16,7 +16,7 @@ const CreditsSection = () => {
         <img
           className="credits__producer-logo"
           alt="hdn logo"
-          src="img/hodeon-logo-80x80.png"
+          src="/img/hodeon-logo-32x32.png"
           title="HodeonArtz"
         />
       </a>

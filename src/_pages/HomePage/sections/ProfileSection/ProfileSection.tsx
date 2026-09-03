@@ -12,11 +12,15 @@ const ProfileSection = () => {
         </div>
       </div>
       <Img
-        src="img/zyriak-profile-photo.jpg"
+        src="/img/zyriak-profile-photo-400x400.jpg"
+        srcSet="
+          /img/zyriak-profile-photo-400x400.jpg 500w,
+          /img/zyriak-profile-photo-200x200.jpg 200w
+        "
         alt="zyriak photo"
         className="profile__profile-picture"
         glossy
-      ></Img>
+      />
 
       <article className="profile__content" aria-label="About Zyriak">
         <BrandLogotype />
