@@ -74,7 +74,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  padding: 2px; /* grosor del borde */
+  padding: 2px;
   border-radius: inherit;
 
   background: linear-gradient(to bottom, #fff, rgba(200, 182, 102, 0.175));
@@ -98,7 +98,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  mix-blend-mode: luminosity;
+  /* mix-blend-mode: luminosity; */
   transition: transform 50ms ease;
   transform: scale(1);
   @mixin text-shadow;

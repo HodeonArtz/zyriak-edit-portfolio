@@ -1,5 +1,4 @@
 import "./IconButton.css";
-import "../Button.css";
 
 import { type ButtonHTMLAttributes, type DetailedHTMLProps } from "react";
 
