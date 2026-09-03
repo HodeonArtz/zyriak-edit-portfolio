@@ -1,27 +1,46 @@
 @import url("../../../../_styles/utils.css");
+@import url("../../../../_styles/breakpoints.css");
 .credits-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 0.875rem;
+  column-gap: 2rem;
+  font-weight: 300;
 }
 .credits__copyright-section {
   display: flex;
   align-items: center;
-  gap: 1em;
+  gap: 1rem;
 }
 .credits__brand-logo {
   font-family: "Otomo W00 Round";
   filter: none;
   text-shadow: 0 3px 8.4px rgba(0, 0, 0, 0.25);
-  font-size: 1.5em;
+  font-size: 1.25rem;
 }
 .credits__producer-section {
   display: flex;
   align-items: center;
-  gap: 1em;
+  gap: 1rem;
+  text-decoration: inherit;
+  color: inherit;
 }
 .credits__producer-logo {
   aspect-ratio: 1 / 1;
-  width: 2.5em;
+  width: 2rem;
   @mixin text-shadow;
+}
+@media (--mobile) {
+  .credits-section {
+    row-gap: 1em;
+  }
+  .credits-section > * {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .credits__copyright-section {
+    flex-direction: row-reverse;
+  }
 }
