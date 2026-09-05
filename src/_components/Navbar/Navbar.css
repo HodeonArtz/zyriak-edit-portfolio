@@ -139,7 +139,7 @@
       rgba(0, 0, 0, 0.2) 95%,
       rgba(0, 0, 0, 0) 100%
     );
-    mask: url("vectors/simple-circle.svg");
+    mask: url("/vectors/simple-circle.svg");
     mask-position: -60% 168%;
     mask-size: 200%;
     /*         mask-position: 50% 80%;

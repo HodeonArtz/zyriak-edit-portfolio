@@ -115,7 +115,7 @@
 } */
 
 /* .bg__grid {
-  background-image: url("vectors/grid_dorfic_for_mirror.svg");
+  background-image: url("/vectors/grid_dorfic_for_mirror.svg");
   background-size: 1000px 1000px;
   width: 1500px;
   height: 1500px;
@@ -123,8 +123,8 @@
   transform: translateX(-912px) translateY(1900px) translateZ(-5520px)
     rotateX(71deg) rotateY(7deg) rotateZ(8deg) scale(8);
   animation: infinite bg-grid-moving-animation 120s linear;
-  -webkit-mask-image: url("vectors/bg-grid-gradient-mask.svg");
-  mask-image: url("vectors/bg-grid-gradient-mask.svg");
+  -webkit-mask-image: url("/vectors/bg-grid-gradient-mask.svg");
+  mask-image: url("/vectors/bg-grid-gradient-mask.svg");
 
   -webkit-mask-mode: luminance;
   mask-mode: luminance;
