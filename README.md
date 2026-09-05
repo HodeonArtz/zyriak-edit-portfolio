@@ -9,7 +9,7 @@ Hi, welcome to my website repo! In this website I show some videos I've worked o
 - **Where can you find me** and my contact information
 - DORFic aesthetic 🟠🍊🔶🟧📳
 
-## Technologies used to create my website
+## Technologies used to create my website
 
 - Vite
 - React 19
