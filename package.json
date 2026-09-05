@@ -1,5 +1,6 @@
 {
   "name": "zyriak-edit-portfolio",
+  "homepage": "https://zyriak18.github.io/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,11 +8,14 @@
     "dev": "bunx --bun vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "bun run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
     "@tabler/icons-react": "^3.46.0",
+    "gh-pages": "^6.3.0",
     "gsap": "^3.15.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
